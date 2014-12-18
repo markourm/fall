@@ -21947,7 +21947,7 @@
 			<VictoryPrereq>NONE</VictoryPrereq>
 			<FreeStartEra>NONE</FreeStartEra>
 			<MaxStartEra>NONE</MaxStartEra>
-			<ObsoleteTech>NONE</ObsoleteTech>
+			<ObsoleteTech>TECH_ANCIENT_CHANTS</ObsoleteTech>
 			<PrereqTech>TECH_PASS_THROUGH_THE_ETHER</PrereqTech>
 			<TechTypes>
 			</TechTypes>
@@ -34903,7 +34903,7 @@
 			<VictoryPrereq>NONE</VictoryPrereq>
 			<FreeStartEra>NONE</FreeStartEra>
 			<MaxStartEra>NONE</MaxStartEra>
-			<ObsoleteTech>NONE</ObsoleteTech>
+			<ObsoleteTech>TECH_ANCIENT_CHANTS</ObsoleteTech>
 			<PrereqTech>TECH_PASS_THROUGH_THE_ETHER</PrereqTech>
 			<TechTypes>
 			</TechTypes>
