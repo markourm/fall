@@ -1,0 +1,974 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Global Defines -->
+<Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml">
+    <Define>
+        <DefineName>MODS_SHOULD_OVERRIDE_GLOBAL_DEFINES_HERE</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>START_YEAR</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BASE_RESEARCH_RATE</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>NUM_BUILDING_PREREQ_OR_BONUSES</DefineName>
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>MAX_NATIONAL_WONDERS_PER_CITY</DefineName>
+        <iDefineIntVal>-1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>MAX_NATIONAL_WONDERS_PER_CITY_FOR_OCC</DefineName>
+        <iDefineIntVal>-1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>RIVER_ATTACK_MODIFIER</DefineName>
+        <iDefineIntVal>-40</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE_TEAM</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BASE_SPY_SABOTAGE_COST</DefineName>
+        <iDefineIntVal>50</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BASE_SPY_DESTROY_COST</DefineName>
+        <iDefineIntVal>25</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BASE_SPY_STEAL_PLANS_COST</DefineName>
+        <iDefineIntVal>25</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ANIMAL_MAX_XP_VALUE</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BARBARIAN_MAX_XP_VALUE</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GOLDEN_AGE_LENGTH</DefineName>
+        <iDefineIntVal>12</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>TECH_COST_EXTRA_TEAM_MEMBER_MODIFIER</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>TECH_COST_TOTAL_KNOWN_TEAM_MODIFIER</DefineName>
+        <iDefineIntVal>10</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>MIN_REVOLUTION_TURNS</DefineName>
+        <iDefineIntVal>10</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>MAX_EXPERIENCE_PER_COMBAT</DefineName>
+        <iDefineIntVal>999</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>MAX_EXPERIENCE_AFTER_UPGRADE</DefineName>
+        <iDefineIntVal>999</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BASE_UNIT_UPGRADE_COST</DefineName>
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>UNIT_UPGRADE_COST_PER_PRODUCTION</DefineName>
+        <iDefineIntVal>2</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>CAMERA_CITY_ZOOM_IN_DISTANCE</DefineName>
+        <fDefineFloatVal>4250</fDefineFloatVal>
+    </Define>
+    <Define>
+        <DefineName>ADVANCED_START_ALLOWS_UNITS_OUTSIDE_CITIES</DefineName>
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ADVANCED_START_CITY_COST_INCREASE</DefineName>
+        <iDefineIntVal>50</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>FIRST_EVENT_DELAY_TURNS</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>NO_ESPIONAGE_CULTURE_LEVEL_MODIFIER</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_GOOD_TO_GOOD</DefineName>
+        <iDefineIntVal>2</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_GOOD_TO_NEUTRAL</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_GOOD_TO_EVIL</DefineName>
+        <iDefineIntVal>-5</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_NEUTRAL_TO_GOOD</DefineName>
+        <iDefineIntVal>-2</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_NEUTRAL_TO_NEUTRAL</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_NEUTRAL_TO_EVIL</DefineName>
+        <iDefineIntVal>-2</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_EVIL_TO_GOOD</DefineName>
+        <iDefineIntVal>-4</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_EVIL_TO_NEUTRAL</DefineName>
+        <iDefineIntVal>-2</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ALIGNMENT_ATTITUDE_EVIL_TO_EVIL</DefineName>
+        <iDefineIntVal>2</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>APOCALYPSE_KILL_CHANCE</DefineName>
+        <iDefineIntVal>60</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BARBARIAN_EXPERIENCE_MODIFIER</DefineName>
+        <iDefineIntVal>75</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>COMBAT_APPLY_CHANCE</DefineName>
+        <iDefineIntVal>50</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>CRUSADE_SPAWN_CHANCE</DefineName>
+        <iDefineIntVal>20</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>FEATURE_REQUIRE_RESIST_AMOUNT</DefineName>
+        <iDefineIntVal>20</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>FEATURE_UPGRADE_CHANCE</DefineName>
+        <iDefineIntVal>3</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>FLAMES_EXPIRE_CHANCE</DefineName>
+        <iDefineIntVal>20</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>FLAMES_SPREAD_CHANCE</DefineName>
+        <iDefineIntVal>20</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>FREE_XP_MAX</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GLOBAL_COUNTER_LIMIT_DEFAULT</DefineName>
+        <iDefineIntVal>50</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>GLOBAL_COUNTER_LIMIT_PER_PLAYER</DefineName>
+        <iDefineIntVal>12</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>HELLFIRE_CHANCE</DefineName>
+        <iDefineIntVal>200</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>IMPROVEMENT_UNIQUE_CHANCE</DefineName>
+        <iDefineIntVal>30</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>MUTATION_CHANCE</DefineName>
+        <iDefineIntVal>8</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>ORDER_SPAWN_CHANCE</DefineName>
+        <iDefineIntVal>75</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>PLANAR_GATE_CHANCE</DefineName>
+        <iDefineIntVal>600</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>RAZE_COST_BASE</DefineName>
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>RAZE_COST_PER_POPULATION</DefineName>
+        <iDefineIntVal>1</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>RAZE_COST_PER_POPULATION_OVER</DefineName>
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>RELIGION_ADOPTION_CHANCE</DefineName>
+        <iDefineIntVal>20</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>SOMNIUM_BASE_DELAY_TURNS</DefineName>
+        <iDefineIntVal>30</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>SPELL_RESIST_CHANCE_BASE</DefineName>
+        <iDefineIntVal>20</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>SPELL_RESIST_CHANCE_MAX</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>SPELL_RESIST_CHANCE_MIN</DefineName>
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>TREANT_SPAWN_CHANCE</DefineName>
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>WRATH_CONVERT_CHANCE</DefineName>
+        <iDefineIntVal>50</iDefineIntVal>
+    </Define>
+    <Define>	<!-- AI variables to allow easy AI tweaking -->
+	<!-- War success value of capturing a city.  BBAI default: 25, BTS 10 -->
+	<DefineName>WAR_SUCCESS_CITY_CAPTURING</DefineName>
+	<iDefineIntVal>25</iDefineIntVal>
+    </Define>
+	<Define>
+		<!-- Ratio of enemy power to team power for AI to consider running TURTLE (all out defense, no offensive forays) strategy.  
+		Equal power would be 100.  BBAI default: 250 -->
+		<DefineName>BBAI_TURTLE_ENEMY_POWER_RATIO</DefineName>
+		<iDefineIntVal>250</iDefineIntVal>
+	</Define>
+	<Define>
+		<!-- Minimum stack strength ratio at which AI will attack enemy city it is next to, higher means less suicide.  BTS default: 120 -->
+		<DefineName>BBAI_ATTACK_CITY_STACK_RATIO</DefineName>
+		<iDefineIntVal>120</iDefineIntVal>
+	</Define>
+    <Define>
+		<!-- Minimum attack odds of best attacker for AI to skip bombarding a city and just attack.  BBAI default: 12 -->
+	<DefineName>BBAI_SKIP_BOMBARD_BEST_ATTACK_ODDS</DefineName>
+	<iDefineIntVal>12</iDefineIntVal>
+    </Define>
+    <Define>
+	<!-- Base ratio of stack strengths for AI considering skipping bombard and just attacking enemy city.
+	This ratio is reduced by the AI's best attacker odds and how long it will take to bombard the city.
+	Lower means AI will more readily skip bombarding.  BBAI default: 300 -->
+	<DefineName>BBAI_SKIP_BOMBARD_BASE_STACK_RATIO</DefineName>
+	<iDefineIntVal>300</iDefineIntVal>
+    </Define>
+    <Define>
+	<!-- Minimum stack strength ratio for AI to skip bombarding city and just attack, higher is more conservative.  BBAI default: 140 -->
+	<DefineName>BBAI_SKIP_BOMBARD_MIN_STACK_RATIO</DefineName>
+	<iDefineIntVal>140</iDefineIntVal>
+    </Define>
+        <Define>
+	<!-- Approximate fraction by number of units of attack stacks which AI aims to consist of bombard units.  BBAI default: 20 -->
+	<DefineName>BBAI_BOMBARD_ATTACK_STACK_FRACTION</DefineName>
+	<iDefineIntVal>10</iDefineIntVal>
+    </Define>
+    <Define>
+        <DefineName>BONUS_MANA</DefineName>
+        <DefineTextVal>BONUS_MANA</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>BONUSCLASS_MANA</DefineName>
+        <DefineTextVal>BONUSCLASS_MANA</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>BONUSCLASS_MANA_RAW</DefineName>
+        <DefineTextVal>BONUSCLASS_RAWMANA</DefineTextVal>
+    </Define>	
+    <Define>
+        <DefineName>FLAMES_EXPIRE_EFFECT</DefineName>
+        <DefineTextVal>FEATURE_FOREST_BURNT</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>FLAMES_FEATURE</DefineName>
+        <DefineTextVal>FEATURE_FLAMES</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>FLAMES_SPREAD_EFFECT</DefineName>
+        <DefineTextVal>IMPROVEMENT_SMOKE</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>SLAVE_UNIT</DefineName>
+        <DefineTextVal>UNIT_SLAVE</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>GREAT_COMMANDER_PROMOTION</DefineName>
+        <DefineTextVal>PROMOTION_GREAT_COMMANDER</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>HIDDEN_NATIONALITY_PROMOTION</DefineName>
+        <DefineTextVal>PROMOTION_HIDDEN_NATIONALITY</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>INVISIBLE_TYPE</DefineName>
+        <DefineTextVal>INVISIBLE_LAND</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>MUTATED_PROMOTION</DefineName>
+        <DefineTextVal>PROMOTION_MUTATED</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>POISONED_PROMOTION</DefineName>
+        <DefineTextVal>PROMOTION_POISONED</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>RANDOM_CIVILIZATION</DefineName>
+        <DefineTextVal>CIVILIZATION_RANDOM</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>STARTING_SETTLER_PROMOTION</DefineName>
+        <DefineTextVal>PROMOTION_STARTING_SETTLER</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>SPECIALUNIT_SPELL</DefineName>
+        <DefineTextVal>SPECIALUNIT_SPELL</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>WEAPON_PROMOTION_TIER1</DefineName>
+        <DefineTextVal>PROMOTION_BRONZE_WEAPONS</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>WEAPON_PROMOTION_TIER2</DefineName>
+        <DefineTextVal>PROMOTION_IRON_WEAPONS</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>WEAPON_PROMOTION_TIER3</DefineName>
+        <DefineTextVal>PROMOTION_MITHRIL_WEAPONS</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>WEAPON_REQ_BONUS_TIER1</DefineName>
+        <DefineTextVal>BONUS_COPPER</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>WEAPON_REQ_BONUS_TIER2</DefineName>
+        <DefineTextVal>BONUS_IRON</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>WEAPON_REQ_BONUS_TIER3</DefineName>
+        <DefineTextVal>BONUS_MITHRIL</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>SNOW_TEMPLE_BUILDING</DefineName>
+        <DefineTextVal>BUILDING_TEMPLE_OF_THE_HAND</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>BUILD_FORT</DefineName>
+        <DefineTextVal>BUILD_FORT</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>BUILDING_FREAK_SHOW</DefineName>
+        <DefineTextVal>BUILDING_FREAK_SHOW</DefineTextVal>
+    </Define>	
+	<Define>	
+		<DefineName>PIRATES</DefineName>
+        <DefineTextVal>CIVILIZATION_LANUN</DefineTextVal>
+    </Define>		
+    <Define>
+        <DefineName>CIVILIZATION_ILLIANS</DefineName>
+        <DefineTextVal>CIVILIZATION_ILLIANS</DefineTextVal>
+    </Define>		
+	<Define>	
+		<DefineName>CIVILIZATION_SVARTALFAR</DefineName>
+        <DefineTextVal>CIVILIZATION_SVARTALFAR</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>CIVILIZATION_LJOSALFAR</DefineName>
+        <DefineTextVal>CIVILIZATION_LJOSALFAR</DefineTextVal>
+    </Define>
+     <Define>
+        <DefineName>CIVILIZATION_KHAZAD</DefineName>
+        <DefineTextVal>CIVILIZATION_KHAZAD</DefineTextVal>
+    </Define>	
+    <Define>
+        <DefineName>FLOOD_PLAINS_FEATURE</DefineName>
+        <DefineTextVal>FEATURE_FLOOD_PLAINS</DefineTextVal>
+    </Define>
+    <Define>
+        <DefineName>JUNGLE_FEATURE</DefineName>
+        <DefineTextVal>FEATURE_JUNGLE</DefineTextVal>
+    </Define>
+   <Define>
+        <DefineName>FEATURE_FOREST</DefineName>
+        <DefineTextVal>FEATURE_FOREST</DefineTextVal>
+    </Define>
+   <Define>
+        <DefineName>FEATURE_FOREST_ANCIENT</DefineName>
+        <DefineTextVal>FEATURE_FOREST_ANCIENT</DefineTextVal>
+    </Define>		
+    <Define>
+        <DefineName>PIRATE_COVE_IMPROVEMENT</DefineName>
+        <DefineTextVal>IMPROVEMENT_PIRATE_COVE</DefineTextVal>
+    </Define>
+     <Define>
+        <DefineName>PROMOTION_WATER1</DefineName>
+        <DefineTextVal>PROMOTION_WATER1</DefineTextVal>
+    </Define>
+   <Define>
+        <DefineName>PROMOTION_SUN1</DefineName>
+        <DefineTextVal>PROMOTION_SUN1</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>PROMOTION_LIFE1</DefineName>
+        <DefineTextVal>PROMOTION_LIFE1</DefineTextVal>
+    </Define>	
+    <Define>
+        <DefineName>PIRATE_COVE_SPELL</DefineName>
+        <DefineTextVal>SPELL_PIRATE_COVE</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>PROMOTION_CHANNELING1</DefineName>
+        <DefineTextVal>PROMOTION_CHANNELING1</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>PROMOTION_CHANNELING3</DefineName>
+        <DefineTextVal>PROMOTION_CHANNELING3</DefineTextVal>
+    </Define>
+
+	<Define>	
+		<DefineName>SPELL_FEAST</DefineName>
+        <DefineTextVal>SPELL_FEAST</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>SPELL_TEACH_SPELLCASTING</DefineName>
+        <DefineTextVal>SPELL_TEACH_SPELLCASTING</DefineTextVal>
+    </Define>		
+	<Define>	
+		<DefineName>SPELL_DISRUPT</DefineName>
+        <DefineTextVal>SPELL_DISRUPT</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>SPELL_CONVERT_CITY_RANTINE</DefineName>
+        <DefineTextVal>SPELL_CONVERT_CITY_RANTINE</DefineTextVal>
+    </Define>		
+   <Define>
+        <DefineName>TECH_BRONZE_WORKING</DefineName>
+        <DefineTextVal>TECH_BRONZE_WORKING</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>TERRAIN_TUNDRA</DefineName>
+        <DefineTextVal>TERRAIN_TUNDRA</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>TERRAIN_SNOW</DefineName>
+        <DefineTextVal>TERRAIN_SNOW</DefineTextVal>
+    </Define>		
+    <Define>
+        <DefineName>TERRAIN_GRASS</DefineName>
+        <DefineTextVal>TERRAIN_GRASS</DefineTextVal>
+    </Define>	
+   <Define>
+        <DefineName>TECH_TAXATION</DefineName>
+        <DefineTextVal>TECH_TAXATION</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>TECH_WAY_OF_THE_EARTHMOTHER</DefineName>
+        <DefineTextVal>TECH_WAY_OF_THE_EARTHMOTHER</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>TECH_FESTIVALS</DefineName>
+        <DefineTextVal>TECH_FESTIVALS</DefineTextVal>
+    </Define>	
+	<Define>	
+		<DefineName>PYRE_ZOMBIE_UNIT</DefineName>
+        <DefineTextVal>UNIT_PYRE_ZOMBIE</DefineTextVal>
+    </Define>	
+	<Define>	
+		<DefineName>UNIT_PRIEST_OF_LEAVES</DefineName>
+        <DefineTextVal>UNIT_PRIEST_OF_LEAVES</DefineTextVal>
+    </Define>		
+	<Define>	
+		<DefineName>UNIT_FIREBALL</DefineName>
+        <DefineTextVal>UNIT_FIREBALL</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>UNITCLASS_FREAK</DefineName>
+        <DefineTextVal>UNITCLASS_FREAK</DefineTextVal>
+    </Define>		
+	<Define>	
+		<DefineName>UNITCLASS_SCOUT</DefineName>
+        <DefineTextVal>UNITCLASS_SCOUT</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>UNITCLASS_VAMP</DefineName>
+        <DefineTextVal>UNIT_VAMPIRE</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>UNITCLASS_VAMPLORD</DefineName>
+        <DefineTextVal>UNIT_VAMPIRE_LORD</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>UNITCLASS_GOVANNON</DefineName>
+        <DefineTextVal>UNITCLASS_GOVANNON</DefineTextVal>
+    </Define>		
+	<Define>	
+		<DefineName>UNITCLASS_LOKI</DefineName>
+        <DefineTextVal>UNITCLASS_LOKI</DefineTextVal>
+    </Define>
+	<Define>	
+		<DefineName>UNITCLASS_RANTINE</DefineName>
+        <DefineTextVal>UNITCLASS_RANTINE</DefineTextVal>
+    </Define>
+	<Define>
+		<DefineName>USE_MODDERS_PLAYEROPTION_1</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>	
+	<Define>
+		<DefineName>GAMEFONT_TGA_RELIGIONS</DefineName>
+		<iDefineIntVal>46</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>RANDOM_PROMOTION_CHANCE_FROM_BONUS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>SPELL_ENTERTAIN</DefineName>
+       		<DefineTextVal>SPELL_ENTERTAIN</DefineTextVal>
+   	</Define>
+	<Define>
+    		<DefineName>SPELL_GIFT_VAMPIRISM</DefineName>
+        	<DefineTextVal>SPELL_GIFT_VAMPIRISM</DefineTextVal>
+   	</Define>
+
+	<Define>
+        <DefineName>USE_NEW_AI_FOUNDVALUE_FUNCTION</DefineName>
+        <iDefineIntVal>0</iDefineIntVal>
+    </Define>
+
+<Define>
+<!--
+ Better BTS AI: Allow AI to use Space victory strategy logic if space race victory is enabled 
+-->
+<DefineName>BBAI_VICTORY_STRATEGY_SPACE</DefineName>
+<iDefineIntVal>0</iDefineIntVal>
+</Define>
+
+<Define>
+<!--
+ Better BTS AI: Allow AI to use Conquest victory strategy logic if conquest victory is enabled  
+-->
+<DefineName>BBAI_VICTORY_STRATEGY_CONQUEST</DefineName>
+<iDefineIntVal>1</iDefineIntVal>
+</Define>
+
+<Define>
+<!--
+ Better BTS AI: Allow AI to use Domination victory strategy logic if domination victory is enabled  
+-->
+<DefineName>BBAI_VICTORY_STRATEGY_DOMINATION</DefineName>
+<iDefineIntVal>1</iDefineIntVal>
+</Define>
+
+<Define>
+<!--
+ Better BTS AI: Allow AI to use Culture victory strategy logic if culture victory is enabled  
+-->
+<DefineName>BBAI_VICTORY_STRATEGY_CULTURE</DefineName>
+<iDefineIntVal>1</iDefineIntVal>
+</Define>
+
+<Define>
+<!--
+ Better BTS AI: Allow AI to use Diplomacy victory strategy logic if diplomacy victory is enabled  
+-->
+<DefineName>BBAI_VICTORY_STRATEGY_DIPLOMACY</DefineName>
+<iDefineIntVal>0</iDefineIntVal>
+</Define>
+<!-- Show Hidden Attitude Mod -->
+<Define>
+	<DefineName>SHOW_HIDDEN_ATTITUDE</DefineName>
+	<iDefineIntVal>0</iDefineIntVal>
+</Define>
+
+<!-- City Bar -->
+
+	<Define>
+		<DefineName>BUG_CITYBAR_AIRPORT_ICONS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_STARVATION_TURNS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+
+<!-- City Bar Hover -->
+
+	<Define>
+		<DefineName>BUG_CITYBAR_BASE_VALUES</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_HEALTH</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_HAPPINESS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_HURRY_ANGER</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_DRAFT_ANGER</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_FOOD_ASSIST</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_BASE_PRODUCTION</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_BUILDING_ACTUAL_EFFECTS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_HURRY_ASSIST</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_HURRY_ASSIST_INCLUDE_CURRENT</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_TRADE_DETAIL</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_COMMERCE</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_BUILDING_ICONS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_CULTURE_TURNS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_GREAT_PERSON_TURNS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_SPECIALISTS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_REVOLT_CHANCE</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_CITYBAR_HIDE_INSTRUCTIONS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+
+<!-- Miscellaneous Hovers -->
+
+<!-- Production Decay (Buildings/Units) -->
+	<Define>
+		<DefineName>BUG_PRODUCTION_DECAY_HOVER</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_PRODUCTION_DECAY_HOVER_BUILDING_THRESHOLD</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_PRODUCTION_DECAY_HOVER_UNIT_THRESHOLD</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+
+	<!-- Leaderhead -->
+	<Define>
+		<DefineName>BUG_LEADERHEAD_HOVER_HIDDEN_ATTITUDE</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_LEADERHEAD_HOVER_WORST_ENEMY</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_LEADERHEAD_HOVER_DEFENSIVE_PACTS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	
+<!-- Plot -->
+	<Define>
+		<DefineName>BUG_PLOT_HOVER_LAT_LONG</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_PLOT_HOVER_PARTIAL_BUILDS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+
+<!-- Building -->
+	<Define>
+		<DefineName>BUG_BUILDING_HOVER_ACTUAL_EFFECTS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+
+<!-- Unit -->
+	<Define>
+		<DefineName>BUG_UPDATE_UNIT_NAME_ON_UPGRADE</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_UNIT_EXPERIENCE_HOVER</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_UNIT_EXPERIENCE_MODIFIERS_HOVER</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+<!-- Specialist -->
+<Define>
+	<DefineName>BUG_SPECIALIST_HOVER_ACTUAL_EFFECTS</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+
+<!-- Tech -->
+<Define>
+	<DefineName>BUG_SPED_UP_TECHS_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_TECH_TRADE_DENIAL_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+
+<!-- Bonus -->
+<Define>
+	<DefineName>BUG_BONUS_TRADE_DENIAL_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+
+<!-- Action Buttons -->
+<Define>
+	<DefineName>BUG_CONSCRIPT_UNIT_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_CONSCRIPT_LIMIT_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+	
+<Define>
+	<DefineName>BUG_HURRY_OVERFLOW_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_HURRY_OVERFLOW_HOVER_INCLUDE_CURRENT</DefineName>
+	<iDefineIntVal>0</iDefineIntVal>
+</Define>
+	
+<Define>
+	<DefineName>BUG_CITY_SCREEN_REMOVE_SPECIALIST_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+	
+<Define>
+	<DefineName>BUG_CDA_ZOOM_CITY_DETAILS</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+
+<!-- City Screen -->
+<Define>
+	<DefineName>BUG_CITY_SCREEN_BASE_COMMERCE_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_GREAT_PEOPLE_RATE_BREAKDOWN_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+	
+<Define>
+	<DefineName>BUG_BUILDING_SAVED_MAINTENANCE_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_BUILDING_ADDITIONAL_FOOD_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_BUILDING_ADDITIONAL_PRODUCTION_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_BUILDING_ADDITIONAL_COMMERCE_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_BUILDING_ADDITIONAL_HEALTH_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_BUILDING_ADDITIONAL_HAPPINESS_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_BUILDING_ADDITIONAL_GREAT_PEOPLE_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<Define>
+	<DefineName>BUG_BUILDING_ADDITIONAL_DEFENSE_HOVER</DefineName>
+	<iDefineIntVal>1</iDefineIntVal>
+</Define>
+	
+	<!-- Production Popup Unit Training -->
+	
+	<Define>
+		<DefineName>BUG_PRODUCTION_POPUP_TRAIN_CIVILIAN_UNITS_FOREVER</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BUG_PRODUCTION_POPUP_TRAIN_MILITARY_UNITS_FOREVER</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+
+<!-- Advanced Combat Odds -->
+	
+	<Define>
+		<DefineName>ACO_ENABLED</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_DEBUG</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	
+	<Define>
+		<DefineName>ACO_FORCE_ORIGINAL_ODDS</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_IGNORE_BARB_FREE_WINS</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	
+	<Define>
+		<DefineName>ACO_SWAP_VIEWS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_MERGE_SHORT_BARS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_MODIFIER_LABELS</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+
+<!-- The following use 0 for hidden, 1 for view A, 2 for view B, and 3 for both views -->
+
+	<Define>
+		<DefineName>ACO_SHOW_BASIC_INFO</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_ATTACKER_INFO</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_DEFENDER_INFO</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	
+	<Define>
+		<DefineName>ACO_SHOW_SURVIVAL_ODDS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_UNHARMED_ODDS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_AVERAGE_HEALTH</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_ATTACKER_HEALTH_BARS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_DEFENDER_HEALTH_BARS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	
+	<Define>
+		<DefineName>ACO_SHOW_UNROUNDED_EXPERIENCE</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_EXPERIENCE_RANGE</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	
+	<Define>
+		<DefineName>ACO_SHOW_DEFENSE_MODIFIERS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ACO_SHOW_TOTAL_DEFENSE_MODIFIER</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	
+	<Define>
+		<DefineName>ACO_SHOW_SHIFT_INSTRUCTIONS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+</Define>
+<!-- Dynamic Civ Names-->
+	<Define>
+		<DefineName>DYNAMIC_CIV_NAMES</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+<!-- Super Forts begin -->
+	<Define>
+		<DefineName>AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>SUPER_FORTS_DURATION_BEFORE_REVOLT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+<!-- Super Forts end -->
+	<Define>
+		<DefineName>COLONY_NUM_FREE_DEFENDERS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PUPPET_CULTURE_MULTIPLIER</DefineName> 
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+</Civ4Defines>

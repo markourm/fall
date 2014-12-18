@@ -1,0 +1,9 @@
+
+// *** Control Bitmap Theme file
+
+// Set the resource 
+resource_path	"Mods/Fall from Heaven 2/Resource";
+
+// Setup common properties
+include			"Mods/Fall from Heaven 2/Resource/Themes/Civ4/Civ4Theme.thm";
+

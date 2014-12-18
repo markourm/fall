@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_WB_SENSIBILITY</Tag>
+		<English>Checks Prerequisites for Multiple Tiles Mode</English>
+		<French>Checks Prerequisites for Multiple Tiles Mode</French>
+		<German>Checks Prerequisites for Multiple Tiles Mode</German>
+		<Italian>Checks Prerequisites for Multiple Tiles Mode</Italian>
+		<Spanish>Checks Prerequisites for Multiple Tiles Mode</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PLOT_TYPE</Tag>
+		<English>Plot Type</English>
+		<French>Plot Type</French>
+		<German>Plot Type</German>
+		<Italian>Plot Type</Italian>
+		<Spanish>Plot Type</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STARTING_PLOT</Tag>
+		<English>Starting Plot</English>
+		<French>Starting Plot</French>
+		<German>Starting Plot</German>
+		<Italian>Starting Plot</Italian>
+		<Spanish>Starting Plot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PYTHON</Tag>
+		<English>Triggers Python Effects:</English>
+		<French>Triggers Python Effects:</French>
+		<German>Triggers Python Effects:</German>
+		<Italian>Triggers Python Effects:</Italian>
+		<Spanish>Triggers Python Effects:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UNIT_AI</Tag>
+		<English>Unit AI</English>
+		<French>Unit AI</French>
+		<German>Unit AI</German>
+		<Italian>Unit AI</Italian>
+		<Spanish>Unit AI</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_EVER</Tag>
+		<English>Ever</English>
+		<French>Ever</French>
+		<German>Ever</German>
+		<Italian>Ever</Italian>
+		<Spanish>Ever</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_HIDE_DEAD</Tag>
+		<English>Hide Dead</English>
+		<French>Hide Dead</French>
+		<German>Hide Dead</German>
+		<Italian>Hide Dead</Italian>
+		<Spanish>Hide Dead</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STATE_RELIGION</Tag>
+		<English>State Religion</English>
+		<French>State Religion</French>
+		<German>State Religion</German>
+		<Italian>State Religion</Italian>
+		<Spanish>State Religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_COMMANDS</Tag>
+		<English>Commands</English>
+		<French>Commands</French>
+		<German>Commands</German>
+		<Italian>Commands</Italian>
+		<Spanish>Commands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_XLEVEL</Tag>
+		<English>Level</English>
+		<French>Level</French>
+		<German>Level</German>
+		<Italian>Level</Italian>
+		<Spanish>Level</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_OWNER</Tag>
+		<English>Owner</English>
+		<French>Owner</French>
+		<German>Owner</German>
+		<Italian>Owner</Italian>
+		<Spanish>Owner</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PLOT</Tag>
+		<English>Plot</English>
+		<French>Plot</French>
+		<German>Plot</German>
+		<Italian>Plot</Italian>
+		<Spanish>Plot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UNIT</Tag>
+		<English>Unit</English>
+		<French>Unit</French>
+		<German>Unit</German>
+		<Italian>Unit</Italian>
+		<Spanish>Unit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_CITY</Tag>
+		<English>City</English>
+		<French>City</French>
+		<German>City</German>
+		<Italian>City</Italian>
+		<Spanish>City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GROUP</Tag>
+		<English>Group</English>
+		<French>Group</French>
+		<German>Group</German>
+		<Italian>Group</Italian>
+		<Spanish>Group</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_LANDMARKS</Tag>
+		<English>Landmarks</English>
+		<French>Landmarks</French>
+		<German>Landmarks</German>
+		<Italian>Landmarks</Italian>
+		<Spanish>Landmarks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MODIFY</Tag>
+		<English>Modify %s1</English>
+		<French>Modify %s1</French>
+		<German>Modify %s1</German>
+		<Italian>Modify %s1</Italian>
+		<Spanish>Modify %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_AI_AUTOPLAY_WARNING</Tag>
+		<English>AI AutoPlay can be stopped with [COLOR_POSITIVE_TEXT]SPACE[COLOR_REVERT] or [COLOR_POSITIVE_TEXT]ESCAPE[COLOR_REVERT]</English>
+		<French>AI AutoPlay can be stopped with [COLOR_POSITIVE_TEXT]SPACE[COLOR_REVERT] or [COLOR_POSITIVE_TEXT]ESCAPE[COLOR_REVERT]</French>
+		<German>AI AutoPlay can be stopped with [COLOR_POSITIVE_TEXT]SPACE[COLOR_REVERT] or [COLOR_POSITIVE_TEXT]ESCAPE[COLOR_REVERT]</German>
+		<Italian>AI AutoPlay can be stopped with [COLOR_POSITIVE_TEXT]SPACE[COLOR_REVERT] or [COLOR_POSITIVE_TEXT]ESCAPE[COLOR_REVERT]</Italian>
+		<Spanish>AI AutoPlay can be stopped with [COLOR_POSITIVE_TEXT]SPACE[COLOR_REVERT] or [COLOR_POSITIVE_TEXT]ESCAPE[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_COASTAL_TRADE</Tag>
+		<English>Coastal [ICON_TRADE]: %d1</English>
+		<French>Coastal [ICON_TRADE]: %d1</French>
+		<German>Coastal [ICON_TRADE]: %d1</German>
+		<Italian>Coastal [ICON_TRADE]: %d1</Italian>
+		<Spanish>Coastal [ICON_TRADE]: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_BASE_YIELD</Tag>
+		<English>Base %s1: %d2</English>
+		<French>Base %s1: %d2</French>
+		<German>Base %s1: %d2</German>
+		<Italian>Base %s1: %d2</Italian>
+		<Spanish>Base %s1: %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_CITY_DATA2</Tag>
+		<English>City Data II</English>
+		<French>City Data II</French>
+		<German>City Data II</German>
+		<Italian>City Data II</Italian>
+		<Spanish>City Data II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_BASE_RATE</Tag>
+		<English>Base Rate: %d1</English>
+		<French>Base Rate: %d1</French>
+		<German>Base Rate: %d1</German>
+		<Italian>Base Rate: %d1</Italian>
+		<Spanish>Base Rate: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PLAYER_DATA</Tag>
+		<English>Player Data</English>
+		<French>Donn&#233;es du joueur</French>
+		<German>Spielerdaten</German>
+		<Italian>Dati del giocatore</Italian>
+		<Spanish>Datos de jugador</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ERASE_ALL_PLOTS</Tag>
+		<English>Erase all plots</English>
+		<French>Effacer toutes les cases</French>
+		<German>Alle Felder löschen</German>
+		<Italian>Erase all plots</Italian>
+		<Spanish>Erase all plots</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_REPEATABLE</Tag>
+		<English>Can use Civilizations and Leaders already in the Game</English>
+		<French>Can use Civilizations and Leaders already in the Game</French>
+		<German>Can use Civilizations and Leaders already in the Game</German>
+		<Italian>Can use Civilizations and Leaders already in the Game</Italian>
+		<Spanish>Can use Civilizations and Leaders already in the Game</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVEAL_PLOT</Tag>
+		<English>Reveal Plot</English>
+		<French>R&#233;v&#233;ler case</French>
+		<German>Feld sichtbar</German>
+		<Italian>Reveal Plot</Italian>
+		<Spanish>Revelar casilla</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVEAL_SUBMARINE</Tag>
+		<English>Reveal Submarine</English>
+		<French>R&#233;v&#233;ler sous-marin</French>
+		<German>U-Boote sichtbar</German>
+		<Italian>Reveal Submarine</Italian>
+		<Spanish>Revelar submarinos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVEAL_STEALTH</Tag>
+		<English>Reveal Stealth</English>
+		<French>R&#233;v&#233;ler furtivit&#233;</French>
+		<German>Tarnzerstörer sichtbar</German>
+		<Italian>Reveal Stealth</Italian>
+		<Spanish>Revelar unidades invisibles</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ADD_UNITS</Tag>
+		<English>Add Units</English>
+		<French>Add Units</French>
+		<German>Add Units</German>
+		<Italian>Add Units</Italian>
+		<Spanish>Add Units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PLOT_DATA</Tag>
+		<English>Plot Data</English>
+		<French>Donn&#233;es de la case</French>
+		<German>Felddaten</German>
+		<Italian>Dati della casella</Italian>
+		<Spanish>Datos de casilla</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_DEFAULT</Tag>
+		<English>Default</English>
+		<French>Default</French>
+		<German>Standard</German>
+		<Italian>Default</Italian>
+		<Spanish>Default</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SHOW_HIDDEN</Tag>
+		<English>Show Hidden Options</English>
+		<French>Show Hidden Options</French>
+		<German>Show Hidden Options</German>
+		<Italian>Show Hidden Options</Italian>
+		<Spanish>Show Hidden Options</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SCRIPT_DATA</Tag>
+		<English>Script Data</English>
+		<French>Donn&#233;es Script</French>
+		<German>Script Data</German>
+		<Italian>Script Data</Italian>
+		<Spanish>Datos de script</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_START_YEAR</Tag>
+		<English>Start Year</English>
+		<French>Ann&#233;e de d&#233;part</French>
+		<German>Startjahr</German>
+		<Italian>Start Year</Italian>
+		<Spanish>Año de inicio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GAME_YEAR</Tag>
+		<English>Game Year: %s1</English>
+		<French>Game Year: %s1</French>
+		<German>Game Year: %s1</German>
+		<Italian>Game Year: %s1</Italian>
+		<Spanish>Game Year: %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MAX_TURNS</Tag>
+		<English>Max Turns: %d1</English>
+		<French>Max Turns: %d1</French>
+		<German>Max Turns: %d1</German>
+		<Italian>Max Turns: %d1</Italian>
+		<Spanish>Max Turns: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_AI_AUTOPLAY</Tag>
+		<English>AI AutoPlay: %d1</English>
+		<French>AI AutoPlay: %d1</French>
+		<German>AI AutoPlay: %d1</German>
+		<Italian>AI AutoPlay: %d1</Italian>
+		<Spanish>AI AutoPlay: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GAME_TURN</Tag>
+		<English>Game Turn: %d1</English>
+		<French>Game Turn: %d1</French>
+		<German>Game Turn: %d1</German>
+		<Italian>Game Turn: %d1</Italian>
+		<Spanish>Game Turn: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ESTIMATED_END_TURN</Tag>
+		<English>Estimated End Turn: %d1</English>
+		<French>Estimated End Turn: %d1</French>
+		<German>Estimated End Turn: %d1</German>
+		<Italian>Estimated End Turn: %d1</Italian>
+		<Spanish>Estimated End Turn: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MAX_CITY_ELIMINATION</Tag>
+		<English>Max City Elimination: %d1</English>
+		<French>Max City Elimination: %d1</French>
+		<German>Max City Elimination: %d1</German>
+		<Italian>Max City Elimination: %d1</Italian>
+		<Spanish>Max City Elimination: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_TARGET_SCORE</Tag>
+		<English>Target Score: %d1</English>
+		<French>Target Score: %d1</French>
+		<German>Target Score: %d1</German>
+		<Italian>Target Score: %d1</Italian>
+		<Spanish>Target Score: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_NUKES_EXPLODED</Tag>
+		<English>Nukes Exploded: %d1</English>
+		<French>Nukes Exploded: %d1</French>
+		<German>Explodierte Atomraketen: %d1</German>
+		<Italian>Nukes Exploded: %d1</Italian>
+		<Spanish>Nukes Exploded: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ADD_NEW_PLAYER</Tag>
+		<English>Add New Player</English>
+		<French>Ajout nouveau joueur</French>
+		<German>Neuen Spieler hinzufügen</German>
+		<Italian>Aggiungi giocatore</Italian>
+		<Spanish>Añadir nuevo jugador</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_AREA_ID</Tag>
+		<English>Area ID</English>
+		<French>Area ID</French>
+		<German>Area ID</German>
+		<Italian>Area ID</Italian>
+		<Spanish>Area ID</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SINGLE_PLOT</Tag>
+		<English>Single Plot</English>
+		<French>Single Plot</French>
+		<German>Single Plot</German>
+		<Italian>Single Plot</Italian>
+		<Spanish>Single Plot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_AREA_PLOTS</Tag>
+		<English>Area Plots</English>
+		<French>Area Plots</French>
+		<German>Area Plots</German>
+		<Italian>Area Plots</Italian>
+		<Spanish>Area Plots</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ALL_PLOTS</Tag>
+		<English>All Plots</English>
+		<French>All Plots</French>
+		<German>All Plots</German>
+		<Italian>All Plots</Italian>
+		<Spanish>All Plots</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UNIT_DATA</Tag>
+		<English>Unit Data</English>
+		<French>Donn&#233;es de l'unit&#233;</French>
+		<German>Einheitendaten</German>
+		<Italian>Dati dell'unit?</Italian>
+		<Spanish>Datos de unidad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_DAMAGE</Tag>
+		<English>Damage</English>
+		<French>D&#233;g&#226;ts</French>
+		<German>Schaden</German>
+		<Italian>Damage</Italian>
+		<Spanish>Damage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_CARGO_SPACE</Tag>
+		<English>Cargo</English>
+		<French>Cargo</French>
+		<German>Cargo</German>
+		<Italian>Cargo</Italian>
+		<Spanish>Cargo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MOVES</Tag>
+		<English>Moves Left</English>
+		<French>Mouvements restants</French>
+		<German>Bewegungspunkte übig</German>
+		<Italian>Movimenti rimanenti</Italian>
+		<Spanish>Movimientos restantes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_IMMOBILE_TIMER</Tag>
+		<English>Immobile Timer</English>
+		<French>Tours d'inactivit&#233;</French>
+		<German>Unbeweglich</German>
+		<Italian>Turni di inattivit?</Italian>
+		<Spanish>Turnos de inactividad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PROMOTION_READY</Tag>
+		<English>Promotion Ready</English>
+		<French>Pr&#234;t pour promotion</French>
+		<German>Beförderung kann vergeben werden</German>
+		<Italian>Pronto per le promozioni</Italian>
+		<Spanish>Preparado para ascender</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MADE_ATTACK</Tag>
+		<English>Made Attack</English>
+		<French>Attaque</French>
+		<German>Griff an</German>
+		<Italian>Attacca</Italian>
+		<Spanish>Ha atacado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MADE_INTERCEPT</Tag>
+		<English>Made Intercept</English>
+		<French>Intercepte</French>
+		<German>Auf Abfangmission</German>
+		<Italian>Intercetta</Italian>
+		<Spanish>Ha interceptado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_DIRECTION</Tag>
+		<English>Direction</English>
+		<French>Direction</French>
+		<German>Blickrichtung</German>
+		<Italian>Direction</Italian>
+		<Spanish>Dirección</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_HURRY_ANGER</Tag>
+		<English>Hurry [ICON_UNHAPPY]: %d1</English>
+		<French>Hurry [ICON_UNHAPPY]: %d1</French>
+		<German>Hurry [ICON_UNHAPPY]: %d1</German>
+		<Italian>Hurry [ICON_UNHAPPY]: %d1</Italian>
+		<Spanish>Hurry [ICON_UNHAPPY]: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_DEFY_RESOLUTION</Tag>
+		<English>Defy Resolution [ICON_UNHAPPY]: %d1</English>
+		<French>D&#233;fier r&#233;solution [ICON_UNHAPPY]: %d1</French>
+		<German>Defy Resolution [ICON_UNHAPPY]: %d1</German>
+		<Italian>Defy Resolution [ICON_UNHAPPY]: %d1</Italian>
+		<Spanish>Desafiar resolución [ICON_UNHAPPY]: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_TEMP_HAPPY</Tag>
+		<English>Temporary [ICON_HAPPY]: %d1</English>
+		<French>Temporary [ICON_HAPPY]: %d1</French>
+		<German>Temporary [ICON_HAPPY]: %d1</German>
+		<Italian>Temporary [ICON_HAPPY]: %d1</Italian>
+		<Spanish>Temporary [ICON_HAPPY]: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_DEFENSE</Tag>
+		<English>Defense: %d1[ICON_DEFENSE]</English>
+		<French>D&#233;fense: %d1[ICON_DEFENSE]</French>
+		<German>Verteidigung: %d1[ICON_DEFENSE]</German>
+		<Italian>Difesa: %d1[ICON_DEFENSE]</Italian>
+		<Spanish>Defensa: %d1[ICON_DEFENSE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GRANT_AVAILABLE</Tag>
+		<English>Grant Available</English>
+		<French>Accorder disponible</French>
+		<German>Verlehe alle verfügbaren</German>
+		<Italian>Grant Available</Italian>
+		<Spanish>Grant Available</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_COPY_ALL</Tag>
+		<English>Apply to All %s1</English>
+		<French>Apply to All %s1</French>
+		<German>Apply to All %s1</German>
+		<Italian>Apply to All %s1</Italian>
+		<Spanish>Apply to All %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_FREE_SPECIALISTS</Tag>
+		<English>Free Specialists</English>
+		<French>Sp&#233;cialistes gratuits</French>
+		<German>Freie Spezialisten</German>
+		<Italian>Free Specialists</Italian>
+		<Spanish>Free Specialists</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PROGRESS</Tag>
+		<English>Progress: %d1</English>
+		<French>Progr&#232;s: %d1</French>
+		<German>Fortschritt: %d1</German>
+		<Italian>Progress: %d1</Italian>
+		<Spanish>Progress: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GOLDEN_AGE_UNITS</Tag>
+		<English>[ICON_GREATPEOPLE] Required: %d1</English>
+		<French>[ICON_GREATPEOPLE] Required: %d1</French>
+		<German>[ICON_GREATPEOPLE] Required: %d1</German>
+		<Italian>[ICON_GREATPEOPLE] Required: %d1</Italian>
+		<Spanish>[ICON_GREATPEOPLE] Required: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ANARCHY</Tag>
+		<English>Anarchy: %d1</English>
+		<French>Anarchie: %d1</French>
+		<German>Anarchie: %d1</German>
+		<Italian>Anarchia: %d1</Italian>
+		<Spanish>Anarquía: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STATE_RELIGION_UNIT</Tag>
+		<English>[ICON_RELIGION] Unit [ICON_PRODUCTION]: %d1%%</English>
+		<French>[ICON_RELIGION] Unit [ICON_PRODUCTION]: %d1%%</French>
+		<German>[ICON_RELIGION] Unit [ICON_PRODUCTION]: %d1%%</German>
+		<Italian>[ICON_RELIGION] Unit [ICON_PRODUCTION]: %d1%%</Italian>
+		<Spanish>[ICON_RELIGION] Unit [ICON_PRODUCTION]: %d1%%</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STATE_RELIGION_BUILDING</Tag>
+		<English>[ICON_RELIGION] Building [ICON_PRODUCTION]: %d1%%</English>
+		<French>[ICON_RELIGION] Building [ICON_PRODUCTION]: %d1%%</French>
+		<German>[ICON_RELIGION] Building [ICON_PRODUCTION]: %d1%%</German>
+		<Italian>[ICON_RELIGION] Building [ICON_PRODUCTION]: %d1%%</Italian>
+		<Spanish>[ICON_RELIGION] Building [ICON_PRODUCTION]: %d1%%</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_TEAM_DATA</Tag>
+		<English>Team Data</English>
+		<French>Donn&#233;es d'&#233;quipe</French>
+		<German>Teamdaten</German>
+		<Italian>Dati della squadra</Italian>
+		<Spanish>Datos de equipo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MAP_CENTERING</Tag>
+		<English>Map Centering</English>
+		<French>Centrer la carte</French>
+		<German>Weltkarte zentriert</German>
+		<Italian>Centra la mappa</Italian>
+		<Spanish>Centrado del mapa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GOLD_TRADING</Tag>
+		<English>Gold Trading</English>
+		<French>&#201;change d'or</French>
+		<German>Goldhandel</German>
+		<Italian>Commercio di oro</Italian>
+		<Spanish>Comercio con oro</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_TECH_TRADING</Tag>
+		<English>Tech Trading</English>
+		<French>Commerce de technologies</French>
+		<German>Techtausch</German>
+		<Italian>Commercio di tecnologie</Italian>
+		<Spanish>Comercio con tecnología</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MAP_TRADING</Tag>
+		<English>Map Trading</English>
+		<French>&#201;change de cartes</French>
+		<German>Kartentausch</German>
+		<Italian>Commercio di mappe</Italian>
+		<Spanish>Comercio con mapas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_VASSAL_TRADING</Tag>
+		<English>Vassal Trading</English>
+		<French>Permet la vassalit&#233;</French>
+		<German>Vasallen</German>
+		<Italian>Abilita gli stati vassalli</Italian>
+		<Spanish>Estados vasallos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_WATER_WORK</Tag>
+		<English>Water Work</English>
+		<French>Travailler les cases d'eau</French>
+		<German>Wasserfelder bewirtschaften</German>
+		<Italian>Raggio d'avvistamento sull'acqua aumentato</Italian>
+		<Spanish>Visibilidad adicional sobre el agua</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_EXTRA_WATER_SIGHT</Tag>
+		<English>Extra Water Sight</English>
+		<French>Vision suppl&#233;mentaire sur eau</French>
+		<German>Zusätzliche Sicht über Wasser</German>
+		<Italian>Extra Water Sight</Italian>
+		<Spanish>Extra Water Sight</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_BRIDGE_BUILDING</Tag>
+		<English>Bridge Building</English>
+		<French>Construction de ponts</French>
+		<German>Brückenbau</German>
+		<Italian>Costruzione di ponti</Italian>
+		<Spanish>Construcción de puentes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_IGNORE_IRRIGATION</Tag>
+		<English>Ignore Irrigation</English>
+		<French>Plus besoin d'irrigation</French>
+		<German>Bauernhöfe ohne Bewässerung</German>
+		<Italian>Ignora l'irrigazione</Italian>
+		<Spanish>Ignora el riego</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MERGE_TEAM</Tag>
+		<English>Merge Team</English>
+		<French>Forger une &#233;quipe</French>
+		<German>Teams zusammenschließen</German>
+		<Italian>Crea una squadra</Italian>
+		<Spanish>Fusionar equipo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_NUKE_INTERCEPTION</Tag>
+		<English>Nuke Interception: %d1</English>
+		<French>Interception de missiles nucl&#233;aires: %d1</French>
+		<German>Atomtaketen abfangen: %d1</German>
+		<Italian>Intercettazione di missili nucleari: %d1</Italian>
+		<Spanish>Interceptación de misiles nucleares: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ENEMY_WAR_WEARINESS</Tag>
+		<English>Enemy War Weariness: %d1</English>
+		<French>Lassitude de la guerre chez ennemi: %d1</French>
+		<German>Feindliche Kriegsmüdigkeit: %d1</German>
+		<Italian>Enemy War Weariness: %d1</Italian>
+		<Spanish>Hastío bélico del enemigo: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GUARANTEED_ELIGIBILITY</Tag>
+		<English>Guaranteed Eligibility</English>
+		<French>Eligibilit&#233; garantie</French>
+		<German>Teilnahmeberechtigt</German>
+		<Italian>Guaranteed Eligibility</Italian>
+		<Spanish>Elegibilidad garantizada</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_FEATURE_VARIETY</Tag>
+		<English>Variety: %d1</English>
+		<French>vari&#233;t&#233;: %d1</French>
+		<German>Variety: %d1</German>
+		<Italian>Variety: %d1</Italian>
+		<Spanish>Variety: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UPGRADE_PROGRESS</Tag>
+		<English>Upgrade Turns: %d1</English>
+		<French>Tours pour am&#233;lioration: %d1</French>
+		<German>Upgraderunden: %d1</German>
+		<Italian>Turni per l'upgrade: %d1</Italian>
+		<Spanish>Turnos para ampliar: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_TRIGGER_EVENT</Tag>
+		<English>Trigger %s1</English>
+		<French>Trigger %s1</French>
+		<German>Trigger %s1</German>
+		<Italian>Trigger %s1</Italian>
+		<Spanish>Trigger %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_LATITUDE</Tag>
+		<English>Latitude: %d1</English>
+		<French>Latitude: %d1</French>
+		<German>Spielraum: %d1</German>
+		<Italian>Latitude: %d1</Italian>
+		<Spanish>Latitude: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ATTITUDE</Tag>
+		<English>Attitude</English>
+		<French>Attitude</French>
+		<German>Verhältnis</German>
+		<Italian>Attitude</Italian>
+		<Spanish>Actitud</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_CVASSAL</Tag>
+		<English>Capitulated</English>
+		<French>Capitul&#233;</French>
+		<German>Kapituliert</German>
+		<Italian>Capitolato</Italian>
+		<Spanish>Capitulado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MODIFIER</Tag>
+		<English>Modifier</English>
+		<French>Modifier</French>
+		<German>Multiplikator</German>
+		<Italian>Modifier</Italian>
+		<Spanish>Modificador</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_COUNTER_ESPIONAGE</Tag>
+		<English>Counter Espionage</English>
+		<French>Contre-espionnage</French>
+		<German>Spionagepunkte</German>
+		<Italian>Counter Espionage</Italian>
+		<Spanish>Counter Espionage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MEMORY</Tag>
+		<English>Memory</English>
+		<French>M&#233;moire</French>
+		<German>Erinnerung</German>
+		<Italian>Memory</Italian>
+		<Spanish>Memory</Spanish>
+	</TEXT>
+
+<!-- FFH2 Specific-->
+	<TEXT>
+		<Tag>TXT_KEY_WB_STRENGTH_DEFENSE</Tag>
+		<English>Base Defensive Strength:</English>
+		<French>Force Defensive de base:</French>
+		<German>Base Defensive Strength:</German>
+		<Italian>Base Defensive Strength:</Italian>
+		<Spanish>Base Defensive Strength:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UNIT_RELIGION</Tag>
+		<English>Unit's Religion:</English>
+		<French>Unit's Religion:</French>
+		<German>Unit's Religion:</German>
+		<Italian>Unit's Religion:</Italian>
+		<Spanish>Unit's Religion:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_HAS_CAST</Tag>
+		<English>Has Casted</English>
+		<French>Has Casted</French>
+		<German>Has Casted</German>
+		<Italian>Has Casted</Italian>
+		<Spanish>Has Casted</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_DURATION</Tag>
+		<English>Duration</English>
+		<French>Duration</French>
+		<German>Duration</German>
+		<Italian>Duration</Italian>
+		<Spanish>Duration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_OWNER</Tag>
+		<English>Owner:</English>
+		<French>Owner:</French>
+		<German>Owner:</German>
+		<Italian>Owner:</Italian>
+		<Spanish>Owner:</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_WB_MOVE_DISABLED_HUMAN</Tag>
+		<English>Move disabled for Humans</English>
+		<French>Move disabled for Humans</French>
+		<German>Move disabled for Humans</German>
+		<Italian>Move disabled for Humans</Italian>
+		<Spanish>Move disabled for Humans</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MOVE_DISABLED_AI</Tag>
+		<English>Move disabled for AIs</English>
+		<French>Move disabled for AIs</French>
+		<German>Move disabled for AIs</German>
+		<Italian>Move disabled for AIs</Italian>
+		<Spanish>Move disabled for AIs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_BUILD_DISABLED</Tag>
+		<English>Improvement Building Disabled</English>
+		<French>Improvement Building Disabled</French>
+		<German>Improvement Building Disabled</German>
+		<Italian>Improvement Building Disabled</Italian>
+		<Spanish>Improvement Building Disabled</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_FOUND_DISABLED</Tag>
+		<English>City Founding Disabled</English>
+		<French>City Founding Disabled</French>
+		<German>City Founding Disabled</German>
+		<Italian>City Founding Disabled</Italian>
+		<Spanish>City Founding Disabled</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PYTHON_INACTIVE</Tag>
+		<English>Python Inactive</English>
+		<French>Python Inactive</French>
+		<German>Python Inactive</German>
+		<Italian>Python Inactive</Italian>
+		<Spanish>Python Inactive</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PORTAL_X_COORDINATE</Tag>
+		<English>Portal Exit X:</English>
+		<French>Portal Exit X:</French>
+		<German>Portal Exit X:</German>
+		<Italian>Portal Exit X:</Italian>
+		<Spanish>Portal Exit X:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PORTAL_Y_COORDINATE</Tag>
+		<English>Portal Exit Y:</English>
+		<French>Portal Exit Y:</French>
+		<German>Portal Exit Y:</German>
+		<Italian>Portal Exit Y:</Italian>
+		<Spanish>Portal Exit Y:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PLOT_MIN_LEVEL</Tag>
+		<English>Minimum Level:</English>
+		<French>Minimum Level:</French>
+		<German>Minimum Level:</German>
+		<Italian>Minimum Level:</Italian>
+		<Spanish>Minimum Level:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_PLOT_COUNTER</Tag>
+		<English>Plot Counter:</English>
+		<French>Plot Counter:</French>
+		<German>Plot Counter:</German>
+		<Italian>Plot Counter:</Italian>
+		<Spanish>Plot Counter:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GLOBAL_COUNTER</Tag>
+		<English>Global Counter: </English>
+		<French>Global Counter: </French>
+		<German>Global Counter: </German>
+		<Italian>Global Counter: </Italian>
+		<Spanish>Global Counter: </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GLOBAL_COUNTER_LIMIT</Tag>
+		<English>Global Counter Limit: </English>
+		<French>Global Counter Limit: </French>
+		<German>Global Counter Limit: </German>
+		<Italian>Global Counter Limit: </Italian>
+		<Spanish>Global Counter Limit: </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SCENARIO_COUNTER</Tag>
+		<English>Scenario Counter: </English>
+		<French>Scenario Counter: </French>
+		<German>Scenario Counter: </German>
+		<Italian>Scenario Counter: </Italian>
+		<Spanish>Scenario Counter: </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ALIGNMENT</Tag>
+		<English>Alignment:</English>
+		<French>Alignment:</French>
+		<German>Alignment:</German>
+		<Italian>Alignment:</Italian>
+		<Spanish>Alignment:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_COMMERCE_SLIDERS</Tag>
+		<English>Commerce Sliders:</English>
+		<French>Commerce Sliders:</French>
+		<German>Commerce Sliders:</German>
+		<Italian>Commerce Sliders:</Italian>
+		<Spanish>Commerce Sliders:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GROUP_ID</Tag>
+		<English>Group ID: %d1</English>
+		<French>Group ID: %d1</French>
+		<German>Group ID: %d1</German>
+		<Italian>Group ID: %d1</Italian>
+		<Spanish>Group ID: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UNIT_ID</Tag>
+		<English>Unit ID:</English>
+		<French>Unit ID:</French>
+		<German>Unit ID:</German>
+		<Italian>Unit ID:</Italian>
+		<Spanish>Unit ID:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UNIT_NAME</Tag>
+		<English>Unit Name:</English>
+		<French>Unit Name:</French>
+		<German>Unit Name:</German>
+		<Italian>Unit Name:</Italian>
+		<Spanish>Unit Name:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_CIV_TYPE</Tag>
+		<English>Civilization Type:</English>
+		<French>Civilization Type:</French>
+		<German>Civilization Type:</German>
+		<Italian>Civilization Type:</Italian>
+		<Spanish>Civilization Type:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_REV_INDEX</Tag>
+		<English>Revolution Index [ICON_UNHAPPY]: %d1</English>
+		<French>Revolution Index [ICON_UNHAPPY]: %d1</French>
+		<German>Revolution Index [ICON_UNHAPPY]: %d1</German>
+		<Italian>Revolution Index [ICON_UNHAPPY]: %d1</Italian>
+		<Spanish>Revolution Index [ICON_UNHAPPY]: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_IS_IMMORTAL</Tag>
+		<English>Is Immortal</English>
+		<French>Is Immortal</French>
+		<German>Is Immortal</German>
+		<Italian>Is Immortal</Italian>
+		<Spanish>Is Immortal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SPHERES</Tag>
+		<English>Spell Spheres</English>
+		<French>Spell Spheres</French>
+		<German>Spell Spheres</German>
+		<Italian>Spell Spheres</Italian>
+		<Spanish>Spell Spheres</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BUILDINGS</Tag>
+		<English>Unique Buildings</English>
+		<French>Unique Buildings</French>
+		<German>Unique Buildings</German>
+		<Italian>Unique Buildings</Italian>
+		<Spanish>Unique Buildings</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REL_BUILDINGS</Tag>
+		<English>Religious Buildings</English>
+		<French>Religious Buildings</French>
+		<German>Religious Buildings</German>
+		<Italian>Religious Buildings</Italian>
+		<Spanish>Religious Buildings</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BUILDINGS</Tag>
+		<English>Spell Buildings</English>
+		<French>Spell Buildings</French>
+		<German>Spell Buildings</German>
+		<Italian>Spell Buildings</Italian>
+		<Spanish>Spell Buildings</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_CURRENT_UNIT</Tag>
+		<English>Current Unit:</English>
+		<French>Current Unit:</French>
+		<German>Current Unit:</German>
+		<Italian>Current Unit:</Italian>
+		<Spanish>Current Unit:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_HAS_CAST_WORLD_SPELL</Tag>
+		<English>Has Cast World Spell</English>
+		<French>Has Cast World Spell</French>
+		<German>Has Cast World Spell</German>
+		<Italian>Has Cast World Spell</Italian>
+		<Spanish>Has Cast World Spell</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SCENARIO_COUNTER_UNIT</Tag>
+		<English>Alternate Type</English>
+		<French>Alternate Type</French>
+		<German>Alternate Type</German>
+		<Italian>Alternate Type</Italian>
+		<Spanish>Alternate Type</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_REASSIGN_PLAYER</Tag>
+		<English>Reassign Player</English>
+		<French>Reassign Player</French>
+		<German>Reassign Player</German>
+		<Italian>Reassign Player</Italian>
+		<Spanish>Reassign Player</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_HANDICAP</Tag>
+		<English>Difficulty Level:</English>
+		<French>Difficulty Level:</French>
+		<German>Difficulty Level:</German>
+		<Italian>Difficulty Level:</Italian>
+		<Spanish>Difficulty Level:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_IS_PERMANENT_SUMMON</Tag>
+		<English>Is Permanent Summon</English>
+		<French>Is Permanent Summon</French>
+		<German>Is Permanent Summon</German>
+		<Italian>Is Permanent Summon</Italian>
+		<Spanish>Is Permanent Summon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_NUKES_EXPLODED</Tag>
+		<English>Nukes Exploded</English>
+		<French>Nukes Exploded</French>
+		<German>Nukes Exploded</German>
+		<Italian>Nukes Exploded</Italian>
+		<Spanish>Nukes Exploded</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NO_RELIGION</Tag>
+		<English>No Religion</English>
+		<French>No Religion</French>
+		<German>No Religion</German>
+		<Italian>No Religion</Italian>
+		<Spanish>No Religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>INTERFACE_PANE_STRENGTH_DEFENSE</Tag>
+		<English>Defensive Strength</English>
+		<French>Defensive Puissance</French>
+		<German>Defensive Strength</German>
+		<Italian>Defensive Forza</Italian>
+		<Spanish>Defensive Fuerza</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_WB_CURRENT_RESEARCH</Tag>
+		<English>Current Research: </English>
+		<French>Current Research: </French>
+		<German>Current Research: </German>
+		<Italian>Current Research: </Italian>
+		<Spanish>Current Research: </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SUMMON</Tag>
+		<English>Summons</English>
+		<French>Summons</French>
+		<German>Summons</German>
+		<Italian>Summons</Italian>
+		<Spanish>Summons</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SUMMONER</Tag>
+		<English>Summoner</English>
+		<French>Summoner</French>
+		<German>Summoner</German>
+		<Italian>Summoner</Italian>
+		<Spanish>Summoner</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_STANDARD_PROMOTIONS</Tag>
+		<English>Standard Promotions</English>
+		<French>Standard Promotions</French>
+		<German>Standard Promotions</German>
+		<Italian>Standard Promotions</Italian>
+		<Spanish>Standard Promotions</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_REVIVE</Tag>
+		<English>Revive Player</English>
+		<French>Revive Player</French>
+		<German>Revive Player</German>
+		<Italian>Revive Player</Italian>
+		<Spanish>Revive Player</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SWITCH_PLAYER</Tag>
+		<English>Switch Player</English>
+		<French>Switch Player</French>
+		<German>Switch Player</German>
+		<Italian>Switch Player</Italian>
+		<Spanish>Switch Player</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIER_#</Tag>
+		<English>Tier %d1</English>
+		<French>Tier %d1</French>
+		<German>Tier %d1</German>
+		<Italian>Tier %d1</Italian>
+		<Spanish>Tier %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_UNITS</Tag>
+		<English>World Units</English>
+		<French>World Units</French>
+		<German>World Units</German>
+		<Italian>World Units</Italian>
+		<Spanish>World Units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TEAM_UNITS</Tag>
+		<English>Team Units</English>
+		<French>Team Units</French>
+		<German>Team Units</German>
+		<Italian>Team Units</Italian>
+		<Spanish>Team Units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NATIONAL_UNITS</Tag>
+		<English>National Units</English>
+		<French>National Units</French>
+		<German>National Units</German>
+		<Italian>National Units</Italian>
+		<Spanish>National Units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNLIMITED_UNITS</Tag>
+		<English>Unlimited Units</English>
+		<French>Unlimited Units</French>
+		<German>Unlimited Units</German>
+		<Italian>Unlimited Units</Italian>
+		<Spanish>Unlimited Units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_AVAILIBLE_PROMOTIONS</Tag>
+		<English>Availible Promotions</English>
+		<French>Availible Promotions</French>
+		<German>Availible Promotions</German>
+		<Italian>Availible Promotions</Italian>
+		<Spanish>Availible Promotions</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_CURRENT_PROMOTIONS</Tag>
+		<English>Has Promotions</English>
+		<French>Has Promotions</French>
+		<German>Has Promotions</German>
+		<Italian>Has Promotions</Italian>
+		<Spanish>Has Promotions</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_LACKS_PROMOTIONS</Tag>
+		<English>Does Not Have Promotions</English>
+		<French>Does Not Have Promotions</French>
+		<German>Does Not Have Promotions</German>
+		<Italian>Does Not Have Promotions</Italian>
+		<Spanish>Does Not Have Promotions</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SAME_PLOT</Tag>
+		<English>Units On The Same Plot</English>
+		<French>Units On The Same Plot</French>
+		<German>Units On The Same Plot</German>
+		<Italian>Units On The Same Plot</Italian>
+		<Spanish>Units On The Same Plot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_UNLIMITED_PROJECT</Tag>
+		<English>Unlimited Projects</English>
+		<French>Unlimited Projects</French>
+		<German>Unlimited Projects</German>
+		<Italian>Unlimited Projects</Italian>
+		<Spanish>Unlimited Projects</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SPELL</Tag>
+		<English>Cast Spell</English>
+		<French>Cast Spell</French>
+		<German>Cast Spell</German>
+		<Italian>Cast Spell</Italian>
+		<Spanish>Cast Spell</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GO_TO</Tag>
+		<English>Go To</English>
+		<French>Go To</French>
+		<German>Go To</German>
+		<Italian>Go To</Italian>
+		<Spanish>Go To</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALL</Tag>
+		<English>All</English>
+		<French>Tout</French>
+		<German>All</German>
+		<Italian>All</Italian>
+		<Spanish>All</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_KILL</Tag>
+		<English>Kill</English>
+		<French>Tuer</French>
+		<German>Löschen</German>
+		<Italian>Kill</Italian>
+		<Spanish>Matar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_FEATS</Tag>
+		<English>Feats</English>
+		<French>Feats</French>
+		<German>Feats</German>
+		<Italian>Feats</Italian>
+		<Spanish>Feats</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_SHRINE</Tag>
+		<English>Shrines</English>
+		<French>Shrines</French>
+		<German>Shrines</German>
+		<Italian>Shrines</Italian>
+		<Spanish>Shrines</Spanish>
+	</TEXT>
+
+</Civ4GameText>
