@@ -2,11 +2,12 @@ Version=11
 BeginGame
 	Era=ERA_ANCIENT
 	Speed=GAMESPEED_NORMAL
-	Calendar=CALENDAR_DEFAULT
+	Calendar=CALENDAR_MONTHS
 	Option=GAMEOPTION_NO_TECH_TRADING
 	Option=GAMEOPTION_NO_TECH_BROKERING
 	Option=GAMEOPTION_NO_ESPIONAGE
 	Option=GAMEOPTION_DOUBLE_GLOBAL_COUNTER
+	Option=GAMEOPTION_NO_HYBOREM_OR_BASIUM
 	Option=GAMEOPTION_ADVANCED_TACTICS
 	Victory=VICTORY_CONQUEST
 	GameTurn=1
@@ -17,7 +18,7 @@ BeginGame
 	iGlobalCounter=0
 	iGlobalLimitCounter=206
 	iGameScenarioCounter=0
-	StartYear=0
+	StartYear=1082
 	Description=The Birth of Island Empire
 	ModPath=Mods/fall
 EndGame
@@ -80,7 +81,7 @@ BeginTeam
 	TeamID=11
 	Tech=TECH_SEAFARING
 	RevealMap=0
-	DomainType=DOMAIN_SEA, ExtraMoves=10
+	DomainType=DOMAIN_SEA, ExtraMoves=1
 EndTeam
 BeginTeam
 	TeamID=12
@@ -327,14 +328,14 @@ BeginPlayer
 	Team=3
 	LeaderType=LEADER_OS-GABELLA
 	LeaderName=TXT_KEY_LEADER_OS-GABELLA
-	CivDesc=TXT_KEY_CIV_SHEAIM_DESC
-	CivShortDesc=TXT_KEY_CIV_SHEAIM_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SHEAIM_ADJECTIVE
-	FlagDecal=Art/Interface/TeamColor/Sheaimflag.dds
+	CivDesc=Demon Kingdom
+	CivShortDesc=Demons
+	CivAdjective=Demon
+	FlagDecal=Art/Interface/TeamColor/Infernalflag.dds
 	WhiteFlag=0
 	CivType=CIVILIZATION_SHEAIM
 	Color=PLAYERCOLOR_MALAKIM
-	ArtStyle=ARTSTYLE_SHEAIM
+	ArtStyle=ARTSTYLE_INFERNAL
 	PlayableCiv=1
 	MinorNationStatus=0
 	StartingGold=0
@@ -2532,6 +2533,7 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_SEA_SERPENT, UnitOwner=50
 		Level=1, Experience=0
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		FacingDirection=4
 		UnitAIType=UNITAI_ANIMAL
 	EndUnit
@@ -4981,10 +4983,10 @@ BeginPlot
 		PromotionType=PROMOTION_COMBAT4
 		PromotionType=PROMOTION_COMBAT5
 		PromotionType=PROMOTION_DEXTEROUS
-		PromotionType=PROMOTION_FEAR
 		PromotionType=PROMOTION_FIRE_RESISTANCE
 		PromotionType=PROMOTION_FLAMING_ARROWS
 		PromotionType=PROMOTION_HERO
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
 		PromotionType=PROMOTION_NOMAD
 		PromotionType=PROMOTION_POISON_RESISTANCE
@@ -4992,8 +4994,8 @@ BeginPlot
 		PromotionType=PROMOTION_SUN3
 		FacingDirection=4
 		UnitAIType=UNITAI_HERO
-		CombatStr=15
-		CombatDefenseStr=14
+		CombatStr=21
+		CombatDefenseStr=20
 	EndUnit
 	BeginUnit
 		UnitType=EQUIPMENT_GOLDEN_HAMMER, UnitOwner=50
@@ -9150,32 +9152,32 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=100
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=13,y=101
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=13,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=13,y=103
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=13,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=13,y=105
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -9746,37 +9748,42 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=99
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=14,y=100
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=14,y=101
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=14,y=102
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=14,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	ImprovementType=IMPROVEMENT_TOWER
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=104
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=14,y=105
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -10342,42 +10349,54 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=98
-	TerrainType=TERRAIN_OCEAN
+	BonusType=BONUS_PEARL
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=15,y=99
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=15,y=100
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=15,y=101
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=102
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
 EndPlot
 BeginPlot
 	x=15,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=15,y=105
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -10944,37 +10963,43 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=98
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=16,y=99
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=16,y=100
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=101
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
 EndPlot
 BeginPlot
 	x=16,y=102
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=16,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -11530,52 +11555,57 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=95
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=17,y=96
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=17,y=97
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=17,y=98
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=17,y=99
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=100
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_GOLD
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=101
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
 EndPlot
 BeginPlot
 	x=17,y=102
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -12131,52 +12161,89 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=95
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=18,y=96
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=97
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=98
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=18,y=99
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_SUGAR
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=100
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=18,y=101
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+	BeginUnit
+		UnitType=UNIT_HYBOREM, UnitOwner=50
+		Level=1, Experience=0
+		PromotionType=PROMOTION_BLITZ
+		PromotionType=PROMOTION_CANNIBALIZE
+		PromotionType=PROMOTION_COLD_RESISTANCE
+		PromotionType=PROMOTION_COMBAT1
+		PromotionType=PROMOTION_COMBAT2
+		PromotionType=PROMOTION_COMBAT3
+		PromotionType=PROMOTION_COMBAT4
+		PromotionType=PROMOTION_COMBAT5
+		PromotionType=PROMOTION_DEMON
+		PromotionType=PROMOTION_FEAR
+		PromotionType=PROMOTION_FIRE_RESISTANCE
+		PromotionType=PROMOTION_GELA
+		PromotionType=PROMOTION_HERO
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
+		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
+		PromotionType=PROMOTION_LOYALTY
+		PromotionType=PROMOTION_MAGIC_RESISTANCE
+		PromotionType=PROMOTION_POISON_RESISTANCE
+		PromotionType=PROMOTION_SENTRY
+		PromotionType=PROMOTION_WOODSMAN1
+		FacingDirection=4
+		UnitAIType=UNITAI_HERO
+		CombatStr=31
+		CombatDefenseStr=31
+	EndUnit
 EndPlot
 BeginPlot
 	x=18,y=102
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -12527,6 +12594,7 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_SEA_SERPENT, UnitOwner=50
 		Level=1, Experience=0
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		FacingDirection=4
 		UnitAIType=UNITAI_ANIMAL
 	EndUnit
@@ -12733,57 +12801,62 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=94
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=19,y=95
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=19,y=96
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=97
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	ImprovementType=IMPROVEMENT_RUINS
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=98
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=99
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=100
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=101
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=19,y=103
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=19,y=104
-	TerrainType=TERRAIN_OCEAN
+	BonusType=BONUS_FISH
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -13333,47 +13406,50 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=94
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=20,y=95
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=96
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_MANA
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=97
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=98
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=20,y=99
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=20,y=100
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=20,y=101
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=20,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -13933,27 +14009,29 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=94
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=21,y=95
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=21,y=96
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=97
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=98
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -14538,22 +14616,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=95
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=22,y=96
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=22,y=97
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=22,y=98
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -14975,6 +15053,12 @@ BeginPlot
 	x=23,y=62
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	BeginUnit
+		UnitType=UNIT_GIANT_TORTOISE, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ANIMAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=23,y=63
@@ -15530,6 +15614,12 @@ BeginPlot
 	x=24,y=53
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	BeginUnit
+		UnitType=UNIT_SEA_SERPENT, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ANIMAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=24,y=54
@@ -18289,6 +18379,7 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_KRAKEN, UnitOwner=50
 		Level=1, Experience=0
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_STEALTH
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK_SEA
@@ -20745,9 +20836,6 @@ BeginPlot
 		ProductionUnit=UNIT_WARRIOR
 		BuildingType=BUILDING_PALACE_SHEAIM
 		Player0Culture=12
-		FreeBonus=BONUS_MANA_DEATH, Amount=10
-		FreeBonus=BONUS_MANA_FIRE, Amount=10
-		FreeBonus=BONUS_MANA_CHAOS, Amount=10
 	EndCity
 	TeamReveal=0,
 	Player0Culture=60
@@ -22747,6 +22835,12 @@ BeginPlot
 	x=36,y=9
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	BeginUnit
+		UnitType=UNIT_SEA_SERPENT, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ANIMAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=36,y=10
@@ -23919,9 +24013,6 @@ BeginPlot
 		ProductionUnit=UNIT_WARRIOR
 		BuildingType=BUILDING_PALACE_CLAN_OF_EMBERS
 		Player1Culture=13
-		FreeBonus=BONUS_MANA_FIRE, Amount=10
-		FreeBonus=BONUS_MANA_BODY, Amount=10
-		FreeBonus=BONUS_MANA_NATURE, Amount=10
 	EndCity
 	TeamReveal=1,
 	Player1Culture=22
@@ -24479,9 +24570,6 @@ BeginPlot
 		ProductionUnit=UNIT_WARRIOR
 		BuildingType=BUILDING_PALACE_SHEAIM
 		Player3Culture=12
-		FreeBonus=BONUS_MANA_DEATH, Amount=10
-		FreeBonus=BONUS_MANA_FIRE, Amount=10
-		FreeBonus=BONUS_MANA_CHAOS, Amount=10
 	EndCity
 	TeamReveal=3,
 	Player3Culture=60
@@ -28188,9 +28276,6 @@ BeginPlot
 		ProductionUnit=UNIT_WARRIOR
 		BuildingType=BUILDING_PALACE_BALSERAPHS
 		Player5Culture=26
-		FreeBonus=BONUS_MANA_AIR, Amount=10
-		FreeBonus=BONUS_MANA_CHAOS, Amount=10
-		FreeBonus=BONUS_MANA_MIND, Amount=10
 	EndCity
 	TeamReveal=5,
 	Player5Culture=112
@@ -29157,9 +29242,6 @@ BeginPlot
 		ProductionUnit=UNIT_WORKER
 		BuildingType=BUILDING_PALACE_SVARTALFAR
 		Player2Culture=10
-		FreeBonus=BONUS_MANA_MIND, Amount=10
-		FreeBonus=BONUS_MANA_NATURE, Amount=10
-		FreeBonus=BONUS_MANA_SHADOW, Amount=10
 	EndCity
 	TeamReveal=2,
 	Player2Culture=37
@@ -29587,9 +29669,6 @@ BeginPlot
 		BuildingType=BUILDING_PALACE_SIDAR
 		Player10Culture=12
 		ExtraHealth=2
-		FreeBonus=BONUS_MANA_ENCHANTMENT, Amount=10
-		FreeBonus=BONUS_MANA_SPIRIT, Amount=10
-		FreeBonus=BONUS_MANA_SHADOW, Amount=10
 	EndCity
 	TeamReveal=10,
 	Player10Culture=60
@@ -34371,6 +34450,7 @@ BeginPlot
 		PromotionType=PROMOTION_DRAGON
 		PromotionType=PROMOTION_FEAR
 		PromotionType=PROMOTION_FIRE_RESISTANCE
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
 		PromotionType=PROMOTION_MAGIC_IMMUNE
 		PromotionType=PROMOTION_MAGIC_RESISTANCE
@@ -34601,8 +34681,8 @@ BeginPlot
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_ANIMAL
-		CombatStr=12
-		CombatDefenseStr=12
+		CombatStr=18
+		CombatDefenseStr=18
 	EndUnit
 EndPlot
 BeginPlot
@@ -36087,6 +36167,12 @@ BeginPlot
 	x=56,y=116
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	BeginUnit
+		UnitType=UNIT_SEA_SERPENT, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ANIMAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=56,y=117
@@ -37835,27 +37921,27 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=103
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=59,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=59,y=105
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=59,y=106
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=59,y=107
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -38455,32 +38541,34 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=103
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=60,y=104
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_HORSE
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=60,y=105
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=60,y=106
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FALLOUT, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=60,y=107
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=60,y=108
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -39067,47 +39155,48 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=100
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=61,y=101
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=61,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=61,y=103
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=61,y=104
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=0
 EndPlot
 BeginPlot
 	x=61,y=105
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=61,y=106
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=61,y=107
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FALLOUT, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=61,y=108
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -39539,9 +39628,6 @@ BeginPlot
 		ProductionUnit=UNIT_WARRIOR
 		BuildingType=BUILDING_PALACE_ELOHIM
 		Player9Culture=12
-		FreeBonus=BONUS_MANA_NATURE, Amount=10
-		FreeBonus=BONUS_MANA_SPIRIT, Amount=10
-		FreeBonus=BONUS_MANA_WATER, Amount=10
 	EndCity
 	TeamReveal=9,
 	Player9Culture=60
@@ -39721,47 +39807,75 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=100
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=62,y=101
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_VOLCANO, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=62,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=62,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BURNING_SANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=62,y=104
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
+	BeginUnit
+		UnitType=UNIT_BEAST_OF_AGARES, UnitOwner=50
+		Level=4, Experience=10
+		PromotionType=PROMOTION_BLITZ
+		PromotionType=PROMOTION_CANNIBALIZE
+		PromotionType=PROMOTION_COMBAT1
+		PromotionType=PROMOTION_COMBAT2
+		PromotionType=PROMOTION_COMBAT3
+		PromotionType=PROMOTION_DEMON
+		PromotionType=PROMOTION_DRILL1
+		PromotionType=PROMOTION_DRILL2
+		PromotionType=PROMOTION_FEAR
+		PromotionType=PROMOTION_FIRE2
+		PromotionType=PROMOTION_FIRE3
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
+		PromotionType=PROMOTION_MAGIC_RESISTANCE
+		PromotionType=PROMOTION_MARCH
+		PromotionType=PROMOTION_MEDIC1
+		PromotionType=PROMOTION_SHOCK
+		PromotionType=PROMOTION_STIGMATA
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+		CombatStr=31
+		CombatDefenseStr=31
+		UnitReligion=RELIGION_THE_ASHEN_VEIL
+	EndUnit
 EndPlot
 BeginPlot
 	x=62,y=105
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_TORMENTED_SOULS, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=62,y=106
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=62,y=107
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=62,y=108
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -40361,42 +40475,43 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=100
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=63,y=101
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=63,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=63,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BURNING_SANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=63,y=104
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BURNING_SANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=63,y=105
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=63,y=106
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	ImprovementType=IMPROVEMENT_WARNING_POST
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=63,y=107
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -40681,9 +40796,6 @@ BeginPlot
 		ProductionUnit=UNIT_WORKER
 		BuildingType=BUILDING_PALACE_LANUN
 		Player11Culture=10
-		FreeBonus=BONUS_MANA_AIR, Amount=10
-		FreeBonus=BONUS_MANA_CHAOS, Amount=10
-		FreeBonus=BONUS_MANA_WATER, Amount=10
 	EndCity
 	TeamReveal=11,
 	Player11Culture=37
@@ -41028,42 +41140,43 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=64,y=103
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	ImprovementType=IMPROVEMENT_WARNING_POST
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=64,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=64,y=105
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=64,y=106
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=64,y=107
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=64,y=108
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=64,y=109
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -41667,17 +41780,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=102
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=65,y=103
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=65,y=104
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -41687,22 +41800,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=106
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=65,y=107
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=65,y=108
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=65,y=109
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -42329,22 +42442,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=106
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=66,y=107
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_RAZORWEED
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=66,y=108
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=66,y=109
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -42359,22 +42473,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=66,y=113
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=66,y=114
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=66,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -42965,17 +43079,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=106
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=67,y=107
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=67,y=108
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -42995,22 +43109,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=67,y=113
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_SCRUB, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=67,y=114
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=67,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -43335,9 +43450,6 @@ BeginPlot
 		ProductionUnit=UNIT_WARRIOR
 		BuildingType=BUILDING_PALACE_BANNOR
 		Player4Culture=11
-		FreeBonus=BONUS_MANA_EARTH, Amount=10
-		FreeBonus=BONUS_MANA_LAW, Amount=10
-		FreeBonus=BONUS_MANA_SPIRIT, Amount=10
 	EndCity
 	TeamReveal=4,
 	Player4Culture=37
@@ -43657,22 +43769,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=68,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=68,y=113
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=68,y=114
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=68,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -44295,17 +44407,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=113
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=69,y=114
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=69,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -45101,10 +45213,14 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_GIANT_SPIDER, UnitOwner=50
 		Level=1, Experience=0
+		PromotionType=PROMOTION_CANNIBALIZE
+		PromotionType=PROMOTION_COMBAT1
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
+		PromotionType=PROMOTION_WOODSMAN1
 		FacingDirection=4
 		UnitAIType=UNITAI_ANIMAL
-		CombatStr=8
-		CombatDefenseStr=8
+		CombatStr=14
+		CombatDefenseStr=14
 	EndUnit
 EndPlot
 BeginPlot
@@ -48316,9 +48432,6 @@ BeginPlot
 		ProductionUnit=UNIT_WARRIOR
 		BuildingType=BUILDING_PALACE_GRIGORI
 		Player6Culture=12
-		FreeBonus=BONUS_MANA_ENCHANTMENT, Amount=10
-		FreeBonus=BONUS_MANA_SPIRIT, Amount=10
-		FreeBonus=BONUS_MANA_WATER, Amount=10
 	EndCity
 	TeamReveal=6,
 	Player6Culture=60
@@ -48543,9 +48656,6 @@ BeginPlot
 		ProductionUnit=UNIT_WORKER
 		BuildingType=BUILDING_PALACE_AMURITES
 		Player8Culture=10
-		FreeBonus=BONUS_MANA_FIRE, Amount=10
-		FreeBonus=BONUS_MANA_BODY, Amount=10
-		FreeBonus=BONUS_MANA_METAMAGIC, Amount=10
 	EndCity
 	TeamReveal=8,
 	Player8Culture=37
@@ -48774,17 +48884,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=76,y=113
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=76,y=114
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=76,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -49416,27 +49526,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=77,y=113
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=77,y=114
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_GUNPOWDER
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=77,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=77,y=116
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -50052,32 +50163,32 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=78,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=78,y=113
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=78,y=114
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=78,y=115
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=78,y=116
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=78,y=117
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -50689,32 +50800,54 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=79,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=79,y=113
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=79,y=114
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_SCRUB, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=79,y=115
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	RouteType=ROUTE_ROAD
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
+	BeginUnit
+		UnitType=UNIT_IMP, UnitOwner=50
+		Level=1, Experience=1
+		PromotionType=PROMOTION_CHANNELING1
+		PromotionType=PROMOTION_DEMON
+		PromotionType=PROMOTION_ENTROPY1
+		PromotionType=PROMOTION_FIRE_RESISTANCE
+		PromotionType=PROMOTION_FIRE1
+		PromotionType=PROMOTION_SUMMONER
+		FacingDirection=4
+		UnitAIType=UNITAI_WARWIZARD
+		CombatStr=7
+		CombatDefenseStr=7
+	EndUnit
+	BeginCity
+		CityOwner=50
+		CityName=TXT_KEY_CITY_INFERNAL_1
+		CityPopulation=1
+		ProductionUnit=UNIT_WARRIOR
+	EndCity
 EndPlot
 BeginPlot
 	x=79,y=116
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=79,y=117
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -51317,42 +51450,43 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=80,y=110
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=80,y=111
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=80,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=80,y=113
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=80,y=114
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=80,y=115
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_OBSIDIAN_PLAINS, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=80,y=116
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=80,y=117
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -51404,6 +51538,12 @@ BeginPlot
 	x=81,y=7
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	BeginUnit
+		UnitType=UNIT_GIANT_TORTOISE, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ANIMAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=81,y=8
@@ -51807,7 +51947,6 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=12,
-	Player1Culture=1
 EndPlot
 BeginPlot
 	x=81,y=84
@@ -51816,7 +51955,6 @@ BeginPlot
 	PlotType=2
 	TeamReveal=12,
 	Player1Culture=21
-	Player12Culture=1
 EndPlot
 BeginPlot
 	x=81,y=85
@@ -51842,12 +51980,8 @@ BeginPlot
 		ProductionUnit=UNIT_WORKER
 		BuildingType=BUILDING_PALACE_LJOSALFAR
 		Player1Culture=30
-		FreeBonus=BONUS_MANA_AIR, Amount=10
-		FreeBonus=BONUS_MANA_LIFE, Amount=10
-		FreeBonus=BONUS_MANA_NATURE, Amount=10
 	EndCity
 	TeamReveal=12,
-	Player1Culture=44
 	Player12Culture=2
 EndPlot
 BeginPlot
@@ -51856,7 +51990,6 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=12,
-	Player1Culture=21
 	Player12Culture=1
 EndPlot
 BeginPlot
@@ -51864,7 +51997,6 @@ BeginPlot
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=12,
-	Player1Culture=1
 EndPlot
 BeginPlot
 	x=81,y=88
@@ -51979,42 +52111,44 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=81,y=110
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=111
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_SCRUB, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=81,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=113
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=114
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=115
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_SCRUB, FeatureVariety=0
+	TerrainType=TERRAIN_BROKEN_LANDS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=81,y=116
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=81,y=117
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -52604,17 +52738,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=82,y=110
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=111
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=112
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -52624,17 +52758,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=82,y=114
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=115
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=82,y=116
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -57154,7 +57288,7 @@ BeginPlot
 	PlotType=2
 	BeginUnit
 		UnitType=UNIT_LICH, UnitOwner=50
-		Level=1, Experience=0
+		Level=6, Experience=40
 		PromotionType=PROMOTION_AIR1
 		PromotionType=PROMOTION_AIR2
 		PromotionType=PROMOTION_AIR3
@@ -57179,6 +57313,7 @@ BeginPlot
 		PromotionType=PROMOTION_HEROIC_DEFENSE2
 		PromotionType=PROMOTION_HEROIC_STRENGTH
 		PromotionType=PROMOTION_HEROIC_STRENGTH2
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
 		PromotionType=PROMOTION_MAGIC_RESISTANCE
 		PromotionType=PROMOTION_METAMAGIC1
@@ -57186,11 +57321,12 @@ BeginPlot
 		PromotionType=PROMOTION_POISON_RESISTANCE
 		PromotionType=PROMOTION_POTENCY
 		PromotionType=PROMOTION_SUMMONER
+		PromotionType=PROMOTION_TWINCAST
 		PromotionType=PROMOTION_UNDEAD
 		FacingDirection=4
 		UnitAIType=UNITAI_HERO
-		CombatStr=23
-		CombatDefenseStr=23
+		CombatStr=35
+		CombatDefenseStr=35
 	EndUnit
 	BeginUnit
 		UnitType=EQUIPMENT_TIMOR_MASK, UnitOwner=50
@@ -57309,9 +57445,6 @@ BeginPlot
 		ProductionUnit=UNIT_WORKER
 		BuildingType=BUILDING_PALACE_CALABIM
 		Player7Culture=10
-		FreeBonus=BONUS_MANA_BODY, Amount=10
-		FreeBonus=BONUS_MANA_LAW, Amount=10
-		FreeBonus=BONUS_MANA_SHADOW, Amount=10
 	EndCity
 	TeamReveal=7,
 	Player7Culture=37
@@ -57491,11 +57624,11 @@ BeginPlot
 		PromotionType=PROMOTION_DRILL2
 		PromotionType=PROMOTION_DRILL3
 		PromotionType=PROMOTION_DRILL4
-		PromotionType=PROMOTION_FEAR
 		PromotionType=PROMOTION_FIRE_RESISTANCE
 		PromotionType=PROMOTION_HEROIC_DEFENSE
 		PromotionType=PROMOTION_HEROIC_STRENGTH
 		PromotionType=PROMOTION_HEROIC_STRENGTH2
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
 		PromotionType=PROMOTION_MAGIC_RESISTANCE
 		PromotionType=PROMOTION_MARCH
@@ -62449,6 +62582,12 @@ BeginPlot
 	x=98,y=97
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	BeginUnit
+		UnitType=UNIT_GIANT_TORTOISE, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ANIMAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=98,y=98
@@ -62649,6 +62788,7 @@ BeginPlot
 		PromotionType=PROMOTION_COMBAT4
 		PromotionType=PROMOTION_COMBAT5
 		PromotionType=PROMOTION_GUERILLA1
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_SENTRY
 		PromotionType=PROMOTION_WOODSMAN1
 		FacingDirection=4
@@ -63719,9 +63859,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=100,y=107
+	BonusType=BONUS_GUNPOWDER
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=100,y=108
@@ -64333,7 +64474,7 @@ BeginPlot
 	PlotType=2
 	BeginUnit
 		UnitType=UNIT_HILL_GIANT, UnitOwner=50
-		Level=1, Experience=0
+		Level=3, Experience=10
 		PromotionType=PROMOTION_COLD_RESISTANCE
 		PromotionType=PROMOTION_COMBAT1
 		PromotionType=PROMOTION_COMBAT2
@@ -64341,8 +64482,8 @@ BeginPlot
 		PromotionType=PROMOTION_COMBAT4
 		PromotionType=PROMOTION_COMBAT5
 		PromotionType=PROMOTION_COVER
-		PromotionType=PROMOTION_FEAR
 		PromotionType=PROMOTION_FIRE_RESISTANCE
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
 		PromotionType=PROMOTION_MAGIC_RESISTANCE
 		PromotionType=PROMOTION_MARCH
@@ -66072,22 +66213,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=104,y=89
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=104,y=90
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=104,y=91
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=104,y=92
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -66673,22 +66814,25 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=105,y=89
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=105,y=90
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_MANA
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=105,y=91
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=105,y=92
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -67256,47 +67400,47 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=106,y=85
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=86
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=87
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=88
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=89
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=90
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=91
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=92
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=106,y=93
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -67856,52 +68000,55 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=107,y=85
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=107,y=86
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=107,y=87
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=107,y=88
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=107,y=89
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=107,y=90
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=107,y=91
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=107,y=92
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=107,y=93
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=107,y=94
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -68213,6 +68360,12 @@ BeginPlot
 	x=108,y=36
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	BeginUnit
+		UnitType=UNIT_GIANT_TORTOISE, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ANIMAL
+	EndUnit
 EndPlot
 BeginPlot
 	x=108,y=37
@@ -68323,14 +68476,15 @@ BeginPlot
 		PromotionType=PROMOTION_FIRE1
 		PromotionType=PROMOTION_FIRE2
 		PromotionType=PROMOTION_FIRE3
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
 		PromotionType=PROMOTION_LOYALTY
 		PromotionType=PROMOTION_ORC
 		PromotionType=PROMOTION_POISON_RESISTANCE
 		FacingDirection=4
 		UnitAIType=UNITAI_MAGE
-		CombatStr=11
-		CombatDefenseStr=11
+		CombatStr=29
+		CombatDefenseStr=29
 	EndUnit
 	BeginUnit
 		UnitType=EQUIPMENT_POTION_OF_INVISIBILITY, UnitOwner=50
@@ -68487,52 +68641,89 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=108,y=85
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=108,y=86
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=108,y=87
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=108,y=88
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=108,y=89
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=108,y=90
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+	BeginUnit
+		UnitType=UNIT_BASIUM, UnitOwner=50
+		Level=1, Experience=0
+		PromotionType=PROMOTION_ANGEL
+		PromotionType=PROMOTION_BLITZ
+		PromotionType=PROMOTION_COLD_RESISTANCE
+		PromotionType=PROMOTION_COMBAT1
+		PromotionType=PROMOTION_COMBAT2
+		PromotionType=PROMOTION_COMBAT3
+		PromotionType=PROMOTION_COMBAT4
+		PromotionType=PROMOTION_COMBAT5
+		PromotionType=PROMOTION_FIRE_RESISTANCE
+		PromotionType=PROMOTION_HERO
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
+		PromotionType=PROMOTION_LIGHTNING_RESISTANCE
+		PromotionType=PROMOTION_LOYALTY
+		PromotionType=PROMOTION_MAGIC_RESISTANCE
+		PromotionType=PROMOTION_POISON_RESISTANCE
+		PromotionType=PROMOTION_SENTRY
+		FacingDirection=4
+		UnitAIType=UNITAI_HERO
+		CombatStr=27
+		CombatDefenseStr=27
+	EndUnit
+	BeginUnit
+		UnitType=EQUIPMENT_HEALING_SALVE, UnitOwner=50
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_UNKNOWN
+	EndUnit
 EndPlot
 BeginPlot
 	x=108,y=91
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	BonusType=BONUS_IRON
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=108,y=92
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_FOREST_ANCIENT, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=108,y=93
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=108,y=94
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -69103,37 +69294,40 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=109,y=88
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=109,y=89
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=109,y=90
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=109,y=91
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	ImprovementType=IMPROVEMENT_BEAR_DEN
+	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=109,y=92
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=109,y=93
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=109,y=94
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -69704,32 +69898,33 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=110,y=88
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=110,y=89
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=110,y=90
-	TerrainType=TERRAIN_OCEAN
+	BonusType=BONUS_CRAB
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=110,y=91
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=110,y=92
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=110,y=93
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -72252,6 +72447,7 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_LEVIATHAN, UnitOwner=50
 		Level=1, Experience=0
+		PromotionType=PROMOTION_HIDDEN_NATIONALITY
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK_SEA
 	EndUnit
