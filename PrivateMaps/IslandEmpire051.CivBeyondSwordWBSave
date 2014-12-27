@@ -4994,8 +4994,6 @@ BeginPlot
 		PromotionType=PROMOTION_SUN3
 		FacingDirection=4
 		UnitAIType=UNITAI_HERO
-		CombatStr=21
-		CombatDefenseStr=20
 	EndUnit
 	BeginUnit
 		UnitType=EQUIPMENT_GOLDEN_HAMMER, UnitOwner=50
@@ -12221,8 +12219,6 @@ BeginPlot
 		PromotionType=PROMOTION_WOODSMAN1
 		FacingDirection=4
 		UnitAIType=UNITAI_HERO
-		CombatStr=31
-		CombatDefenseStr=31
 	EndUnit
 EndPlot
 BeginPlot
@@ -39832,7 +39828,7 @@ BeginPlot
 	PlotType=2
 	BeginUnit
 		UnitType=UNIT_BEAST_OF_AGARES, UnitOwner=50
-		Level=4, Experience=10
+		Level=1, Experience=1
 		PromotionType=PROMOTION_BLITZ
 		PromotionType=PROMOTION_CANNIBALIZE
 		PromotionType=PROMOTION_COMBAT1
@@ -39852,9 +39848,6 @@ BeginPlot
 		PromotionType=PROMOTION_STIGMATA
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK
-		CombatStr=31
-		CombatDefenseStr=31
-		UnitReligion=RELIGION_THE_ASHEN_VEIL
 	EndUnit
 EndPlot
 BeginPlot
@@ -45219,8 +45212,6 @@ BeginPlot
 		PromotionType=PROMOTION_WOODSMAN1
 		FacingDirection=4
 		UnitAIType=UNITAI_ANIMAL
-		CombatStr=14
-		CombatDefenseStr=14
 	EndUnit
 EndPlot
 BeginPlot
@@ -50830,8 +50821,6 @@ BeginPlot
 		PromotionType=PROMOTION_SUMMONER
 		FacingDirection=4
 		UnitAIType=UNITAI_WARWIZARD
-		CombatStr=7
-		CombatDefenseStr=7
 	EndUnit
 	BeginCity
 		CityOwner=50
@@ -57325,8 +57314,6 @@ BeginPlot
 		PromotionType=PROMOTION_UNDEAD
 		FacingDirection=4
 		UnitAIType=UNITAI_HERO
-		CombatStr=35
-		CombatDefenseStr=35
 	EndUnit
 	BeginUnit
 		UnitType=EQUIPMENT_TIMOR_MASK, UnitOwner=50
@@ -57640,8 +57627,6 @@ BeginPlot
 		PromotionType=PROMOTION_WEREWOLF
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK
-		CombatStr=13
-		CombatDefenseStr=12
 	EndUnit
 EndPlot
 BeginPlot
@@ -68483,8 +68468,6 @@ BeginPlot
 		PromotionType=PROMOTION_POISON_RESISTANCE
 		FacingDirection=4
 		UnitAIType=UNITAI_MAGE
-		CombatStr=29
-		CombatDefenseStr=29
 	EndUnit
 	BeginUnit
 		UnitType=EQUIPMENT_POTION_OF_INVISIBILITY, UnitOwner=50
@@ -68691,8 +68674,6 @@ BeginPlot
 		PromotionType=PROMOTION_SENTRY
 		FacingDirection=4
 		UnitAIType=UNITAI_HERO
-		CombatStr=27
-		CombatDefenseStr=27
 	EndUnit
 	BeginUnit
 		UnitType=EQUIPMENT_HEALING_SALVE, UnitOwner=50
