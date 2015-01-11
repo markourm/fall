@@ -5676,6 +5676,14 @@
                     <UnitAIType>UNITAI_WARWIZARD</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
             </UnitAIs>
             <NotUnitAIs>
                 <UnitAI>
@@ -5974,6 +5982,14 @@
                 </UnitAI>
                 <UnitAI>
                     <UnitAIType>UNITAI_WARWIZARD</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
@@ -6284,6 +6300,14 @@
                 </UnitAI>
                 <UnitAI>
                     <UnitAIType>UNITAI_WARWIZARD</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
@@ -48914,6 +48938,14 @@
                     <UnitAIType>UNITAI_WARWIZARD</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
             </UnitAIs>
             <NotUnitAIs>
                 <UnitAI>
@@ -49219,6 +49251,14 @@
                     <UnitAIType>UNITAI_WARWIZARD</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
             </UnitAIs>
             <NotUnitAIs>
                 <UnitAI>
@@ -49518,6 +49558,14 @@
                 </UnitAI>
                 <UnitAI>
                     <UnitAIType>UNITAI_WARWIZARD</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
@@ -53653,6 +53701,14 @@
                 </UnitAI>
                 <UnitAI>
                     <UnitAIType>UNITAI_WARWIZARD</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_MANA_UPGRADE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
@@ -64821,15 +64877,11 @@
             </FlankingStrikes>
             <UnitAIs>
                 <UnitAI>
-                    <UnitAIType>UNITAI_EXPLORE</UnitAIType>
+                    <UnitAIType>UNITAI_ATTACK</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
             <NotUnitAIs>
-                <UnitAI>
-                    <UnitAIType>UNITAI_ATTACK</UnitAIType>
-                    <bUnitAI>1</bUnitAI>
-                </UnitAI>
                 <UnitAI>
                     <UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
                     <bUnitAI>1</bUnitAI>
@@ -66094,7 +66146,7 @@
             <Capture>NONE</Capture>
             <Combat>NONE</Combat>
             <Domain>DOMAIN_LAND</Domain>
-            <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
+            <DefaultUnitAI>UNITAI_SHADE</DefaultUnitAI>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SHADE</Description>

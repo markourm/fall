@@ -144,7 +144,7 @@ class Blizzards:
 
 			#If we're creating a new blizzard, apply extra restrictions:
 			if bNew == true:
-				if pPlot.getOwner() != -1:
+				if pPlot.isOwned():
 					if (gc.getPlayer(pPlot.getOwner()).getCivilizationType() != iIllians):
 						return False
 				if pPlot.getOwner() == -1:
@@ -187,9 +187,9 @@ class Blizzards:
 	
 			#Temporary terrain conversions
 			if not pPlot.isWater():
-				if not pPlot.getTempTerrainTimer() < iTurns: #Only convert existing temporary terrain if our timer will be longer than current timer
+				if pPlot.getTempTerrainTimer() < iTurns: #Only convert existing temporary terrain if our timer will be longer than current timer
 					if not pPlot.getTerrainType() == iSnow:
-						if (pPlot.getTerrainType() == iTundra) or pPlot.isHills() or (pPlot.getOwner() == iIllians):
+						if (pPlot.getTerrainType() == iTundra) or pPlot.isHills():
 							pPlot.setTempTerrainType(iSnow, iTurns)
 						else:
 							pPlot.setTempTerrainType(iTundra, iTurns)
