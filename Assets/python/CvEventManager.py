@@ -2485,7 +2485,7 @@ class CvEventManager:
 				if pCity.getNumBuilding(gc.getInfoTypeForString('BUILDING_PUBLIC_BATHS')) > 0:
 					if pPlayer.getUnitClassCount(gc.getInfoTypeForString('UNITCLASS_SUCCUBUS')) < iMax:
 						listUnits.append(gc.getInfoTypeForString('UNIT_SUCCUBUS'))
-				if pCity.getNumBuilding(gc.getInfoTypeForString('BUILDING_OBSIDIAN_GATE')) > 0:
+				if pCity.getNumBuilding(gc.getInfoTypeForString('BUILDING_ALCHEMY_LAB')) > 0:
 					if pPlayer.getUnitClassCount(gc.getInfoTypeForString('UNITCLASS_MINOTAUR')) < iMax:
 						listUnits.append(gc.getInfoTypeForString('UNIT_MINOTAUR'))
 				if pCity.getNumBuilding(gc.getInfoTypeForString('BUILDING_TEMPLE_OF_THE_VEIL')) > 0:
