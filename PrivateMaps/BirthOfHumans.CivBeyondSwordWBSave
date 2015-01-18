@@ -24,7 +24,7 @@ BeginGame
 	iGameScenarioCounter=0
 	StartYear=-512
 	Description=The Rise of Humans of the North
-	ModPath=Mods/fall
+	ModPath=Mods/Fall from Heaven 3
 EndGame
 BeginTeam
 	TeamID=0
@@ -4479,6 +4479,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=48
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -6221,6 +6222,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=57
+	BonusType=BONUS_REAGENTS
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -9041,6 +9043,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=3
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -10633,6 +10636,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=31
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14361,14 +14365,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=40
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=38,y=41
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=38,y=42
@@ -15536,13 +15544,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=39
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=40
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -15554,7 +15563,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=42
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -15916,6 +15924,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=39
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -16277,9 +16287,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=38
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=43,y=39
@@ -16665,17 +16674,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=37
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=44,y=38
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=44,y=39
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -16689,12 +16697,12 @@ BeginPlot
 	x=44,y=41
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=44,y=42
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=43
@@ -17040,7 +17048,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=36
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -17056,7 +17063,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=39
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -17069,7 +17075,7 @@ EndPlot
 BeginPlot
 	x=45,y=41
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=42
@@ -17411,7 +17417,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=34
@@ -17442,19 +17448,19 @@ EndPlot
 BeginPlot
 	x=46,y=39
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=40
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=46,y=41
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=46,y=42
@@ -17795,7 +17801,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=37
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -17808,19 +17813,19 @@ BeginPlot
 	x=47,y=39
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=40
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=47,y=41
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=42
@@ -18166,13 +18171,13 @@ EndPlot
 BeginPlot
 	x=48,y=38
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=48,y=39
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=48,y=40
@@ -18529,7 +18534,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=34
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -18547,13 +18551,12 @@ BeginPlot
 	x=49,y=37
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=49,y=38
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=39
@@ -18745,7 +18748,7 @@ EndPlot
 BeginPlot
 	x=50,y=6
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=50,y=7
@@ -18919,13 +18922,13 @@ EndPlot
 BeginPlot
 	x=50,y=38
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=39
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=50,y=40
@@ -19284,19 +19287,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=37
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=51,y=38
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=51,y=39
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=51,y=40
@@ -19670,15 +19672,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=37
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=52,y=38
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=52,y=39
@@ -19794,6 +19795,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=57
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -20028,20 +20030,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=36
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=53,y=37
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=53,y=38
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=53,y=39
@@ -20391,14 +20391,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=37
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=54,y=38
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=39
@@ -20744,17 +20743,17 @@ EndPlot
 BeginPlot
 	x=55,y=36
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=55,y=37
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=38
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=55,y=39
@@ -21080,7 +21079,7 @@ EndPlot
 BeginPlot
 	x=56,y=30
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=56,y=31
@@ -21105,12 +21104,12 @@ EndPlot
 BeginPlot
 	x=56,y=35
 	TerrainType=TERRAIN_DESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=56,y=36
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=56,y=37
@@ -21476,13 +21475,13 @@ EndPlot
 BeginPlot
 	x=57,y=36
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=57,y=37
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=57,y=38
@@ -21843,13 +21842,13 @@ EndPlot
 BeginPlot
 	x=58,y=36
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=58,y=37
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=58,y=38
@@ -22209,7 +22208,7 @@ EndPlot
 BeginPlot
 	x=59,y=36
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=59,y=37
@@ -22580,9 +22579,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=36
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=60,y=37
@@ -22974,9 +22972,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=35
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=61,y=36
@@ -23359,9 +23356,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=35
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=62,y=36
@@ -23727,19 +23723,19 @@ BeginPlot
 	x=63,y=33
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=63,y=34
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=63,y=35
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=63,y=36
@@ -26313,6 +26309,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=70,y=7
+	BonusType=BONUS_REAGENTS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -27351,6 +27348,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=49
+	BonusType=BONUS_REAGENTS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -29101,6 +29099,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=18
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -30087,6 +30086,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=79,y=47
+	BonusType=BONUS_INCENSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

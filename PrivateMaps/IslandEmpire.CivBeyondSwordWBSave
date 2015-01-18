@@ -20,7 +20,7 @@ BeginGame
 	iGameScenarioCounter=0
 	StartYear=1082
 	Description=Birth of the Island Empire
-	ModPath=Mods/fall
+	ModPath=Mods/Fall from Heaven 3
 EndGame
 BeginTeam
 	TeamID=0
