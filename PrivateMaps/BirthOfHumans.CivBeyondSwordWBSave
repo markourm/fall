@@ -23302,6 +23302,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=25
+	BonusType=BONUS_MANA
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -23985,6 +23986,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=12
+	BonusType=BONUS_MANA
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
