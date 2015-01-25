@@ -26649,7 +26649,7 @@
             </TerrainPassableTechs>
             <FeaturePassableTechs>
             </FeaturePassableTechs>
-            <iCombat>1</iCombat>
+            <iCombat>3</iCombat>
             <iCombatLimit>100</iCombatLimit>
             <iAirCombat>0</iAirCombat>
             <iAirCombatLimit>0</iAirCombatLimit>
