@@ -24,7 +24,7 @@ BeginGame
 	iGameScenarioCounter=0
 	StartYear=-512
 	Description=The Rise of Humans of the North
-	ModPath=Mods/Fall from Heaven 3
+	ModPath=Mods/Tethys
 EndGame
 BeginTeam
 	TeamID=0
