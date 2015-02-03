@@ -370,7 +370,7 @@ BeginPlayer
 	ArtStyle=ARTSTYLE_DOVIELLO
 	PlayableCiv=1
 	MinorNationStatus=0
-	StartingGold=0
+	StartingGold=50
 	StartingX=81, StartingY=8
 	StartingEra=ERA_ANCIENT
 	RandomStartLocation=false
@@ -2003,6 +2003,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=40
+	BonusType=BONUS_GUNPOWDER
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -2354,6 +2355,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=38
+	BonusType=BONUS_PEARL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -6116,6 +6118,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=36
+	BonusType=BONUS_PEARL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -9696,7 +9699,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=61
-	BonusType=BONUS_CLAM
+	BonusType=BONUS_PEARL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -15592,6 +15595,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=47
+	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -20783,6 +20787,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=43
+	BonusType=BONUS_WINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -23491,6 +23496,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=57
+	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -23640,6 +23646,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=19
+	BonusType=BONUS_MANA
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -29091,6 +29098,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=16
+	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
